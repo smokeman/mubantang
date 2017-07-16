@@ -66,11 +66,12 @@
                     </div>
                 </div>
                 {{/each}}
-                <div class="pager">共<span class="red"> {{template.length}} </span>个网站模板 <a class="prev" href="/templates">上一页</a>
+                
+            </div>
+            <div class="pager">共<span class="red"> {{template.length}} </span>个网站模板 <a class="prev" href="/templates">上一页</a>
                     <a class="num" href="/templates">1</a>
                     <a class="next" href="/templates">下一页</a>
                 </div>
-            </div>
         </div>
         {{include './comms/main-footer'}}
 
@@ -79,7 +80,7 @@
 </body>
 
 </html>
-<script type="text/javascript" src="/Public/js/plugins/blocksit.min.js"></script>
+<script type="text/javascript" src="/js/plugins/blocksit.min.js"></script>
 <script type="text/javascript">
     $(function () {
         $(window).load(function () {

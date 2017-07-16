@@ -28,8 +28,20 @@ Detail.create = (obj) => {
         obj.rq);
 };
 
-Detail.get = (mtype) => new Promise((resolve, reject) => {
-    var sql = `select mtype, down, look, img, title, text, rq from muban where mtype = '${mtype}' order by img`;
+Detail.get = (mtype,order) => new Promise((resolve, reject) => {
+    if(order == undefined) order = 'img';
+    var sql = `select mtype, down, look, img, title, text, rq from muban where mtype = '${mtype}' order by ${order} desc`;
+    db.query(sql)
+        .then((results) => {
+            resolve(results);
+        })
+        .catch((error) => {
+            console.log('checkpass err');
+        })
+})
+
+Detail.getOrder = (mtype,order) => new Promise((resolve, reject) => {
+    var sql = `select mtype, down, look, img, title, text, rq from muban where mtype = '${mtype}' order by ${order} desc`;
     db.query(sql)
         .then((results) => {
             resolve(results);

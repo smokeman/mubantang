@@ -1,38 +1,38 @@
-        <div id="sort" class="tg_sort w_list clearfix">
-            <div class="tg_classify_wrap">
-                <dl class="tg_classify_toggle">
-                    <dt class="on">
-                        <a href="http://www.aoxing.me.com/site/0-0-0-1-0">
+<div id="sort" class="tg_sort w_list clearfix">
+    <div class="tg_classify_wrap">
+        <dl class="tg_classify_toggle">
+            <dt class="{{if rule === ''}}on{{/if}}">
+                <a href="/{{route}}">
                     <i class="icon_order"></i>
                     <span>默认</span>
                     <b class="icon_order"></b>
                 </a>
-                    </dt>
-                </dl>
-            </div>
-            <div class="tg_classify_wrap">
-                <dl class="tg_classify_toggle">
-                    <dt class="">
-                        <a href="http://www.aoxing.me.com/site/0-0-0-2-0">
+            </dt>
+        </dl>
+    </div>
+    <div class="tg_classify_wrap">
+        <dl class="tg_classify_toggle">
+            <dt class="{{if rule === 'look'}}on{{/if}}">
+                <a href="/{{route}}?type=look">
                     <i class="icon_order"></i>
-                    <span>人气</span>
+                    <span>浏览</span>
                     <b class="icon_order"></b>
                 </a>
-                    </dt>
-                </dl>
-            </div>
-            <div class="tg_classify_wrap">
-                <dl class="tg_classify_toggle">
-                    <dt class="">
-                        <a href="http://www.aoxing.me.com/site/0-0-0-3-0">
+            </dt>
+        </dl>
+    </div>
+    <div class="tg_classify_wrap">
+        <dl class="tg_classify_toggle">
+            <dt class="{{if rule === 'down'}}on{{/if}}">
+                <a href="/{{route}}?type=down">
                     <i class="icon_order"></i>
-                    <span>评论</span>
+                    <span>下载</span>
                     <b class="icon_order"></b>
                 </a>
-                    </dt>
-                </dl>
-            </div>
-            <div class="tg_classify_wrap">
+            </dt>
+        </dl>
+    </div>
+    <!--<div class="tg_classify_wrap">
                 <dl class="tg_classify_simplecheck">
                     <dt class="">
                         <a href="http://www.aoxing.me.com/site/0-0-0-6-0">
@@ -41,5 +41,11 @@
                 </a>
                     </dt>
                 </dl>
-            </div>
-        </div>
+            </div>-->
+</div>
+
+<script>
+    function toUrl(par, route) {
+        alert(par);
+    }
+</script>
