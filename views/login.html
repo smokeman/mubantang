@@ -48,3 +48,37 @@
 
 
 {{include './comms/main-footer'}}
+
+<script type="text/javascript">
+            function subLogin(obj) {
+                var username = $.trim($('#username').val());
+                var pwd = $.trim($('#pwd').val());
+                if (username == '') {
+                    showLoginError("请输入用户名或邮箱");
+                    return false;
+                }
+                if (pwd == '') {
+                    showLoginError("请输入密码");
+                    return false;
+                }
+
+                obj.addClass('disabled').val('登录中...');
+                $.post('/signin', { username: username, pwd: pwd }, function (data) {
+                    if (data.error != '') {
+                        showLoginError(data.error);
+                    } else {
+
+                        showSuccessTip(data.tip);
+                        var url = "/";
+                        setTimeout("goUrl('" + url + "')", 1000);
+                    }
+                    obj.removeClass('disabled').val('登录');
+                }, "json")
+
+            }
+            // function showLoginError(tip) {
+            //     $("#notice_error").text(tip).show();
+            //     $("#notice_error").fadeOut(2500);
+            // }
+
+</script>
