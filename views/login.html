@@ -1,13 +1,13 @@
 {{include './comms/title_header_4'}}
     <body> 
         {{include './comms/all_header'}} {{include './comms/paoma'}}
-<link rel="stylesheet" href="http://www.sucaihuo.com/other/login/css/base.css" />
+<link rel="stylesheet" href="css/base.css" />
 
 <div class="wrap">
     <div class="pop-title clearfix">
-        <a class="a_underline" href="http://www.sucaihuo.com/reg.html">注册</a>   
+        <a class="a_underline" href="/reg">注册</a>   
         <div class="pop_name">
-            登录<span class="grey">与网友进行讨论及互动；收藏您喜欢的文章和内容；积累积分下载原创模板、精品源码、(兑换礼品正在开发中...)；分享代码、解决求助赢取金币。</span>
+            登录<span class="grey"></span>
         </div>
 
     </div>
@@ -48,7 +48,10 @@
 
 
 {{include './comms/main-footer'}}
-
+{{include './comms/windown_box'}}
+    <script src="reg_files/hm.js"></script>
+    <script src="reg_files/jquery.js" type="text/javascript"></script>
+    <script src="reg_files/common.js" type="text/javascript"></script>
 <script type="text/javascript">
             function subLogin(obj) {
                 var username = $.trim($('#username').val());
@@ -70,7 +73,7 @@
 
                         showSuccessTip(data.tip);
                         var url = "/";
-                        setTimeout("goUrl('" + url + "')", 1000);
+                        setTimeout("goUrl('" + url + "')", 10);
                     }
                     obj.removeClass('disabled').val('登录');
                 }, "json")
