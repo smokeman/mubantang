@@ -2,19 +2,46 @@ var tenpay = require('tenpay');
 var config = {
 	appid: 'wx4fe135a46ae46e63',
 	mchid: '1485431572',
-	partnerKey: '6b83cf5a1afbb79ba482c176c33d5f3f',
+	partnerKey: 'wanghuaixinwanghuaixinwanghuaixi',
 	// pfx: require('fs').readFileSync('证书文件路径'),
-	notify_url: '222.186.191.40',
-	spbill_create_ip: '222.186.191.40'
+	notify_url: 'http://www.aoxing.me/notify',
+	spbill_create_ip: '222.186.191.40',
+	
 }
 var api = new tenpay(config);
 
-var order = {
-	out_trade_no: '1010101010101',
-	body: 'test',
-	total_fee: 100,
-    openid:'opxwxw9i2-AtcYCNqY6YNmu5ugkg'
+
+function pay(){
+
 }
-api.unifiedOrder(order, function(err,result){
-    console.log(err);
-});
+
+pay.paydo = (trade_no,total_fee,product_id) => new Promise((resolve,reject) => {
+
+	var order = {
+		out_trade_no: trade_no,
+		body: '模板购买',
+		total_fee: total_fee,
+		// openid:'opxwxw9i2-AtcYCNqY6YNmu5ugkg',
+		trade_type:'NATIVE',
+		product_id:product_id
+		
+	}
+
+	api.unifiedOrder(order)
+	.then((result)=>{
+		console.log(result);
+		resolve(result);
+	})
+	.catch((err)=>{
+		reject(err)
+	})
+
+	// api.unifiedOrder(order, function(err,result){
+    // 	console.log(result);
+	// });
+
+})
+
+
+
+module.exports = pay;
