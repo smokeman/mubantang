@@ -37,7 +37,7 @@
                     </div>
                     <p class="info">
                         <!--<span class="fr">来源：http://1000zhu.com/</span>-->
-                        <span class='red'>素材网管理员</span> <span class="addtime">2015-09-11 15:44</span><span>浏览(<span>701</span>)</span>
+                        <span class='red'>素材网管理员</span> <span class="addtime">2015-09-11 15:44</span><span>浏览(<span>{{detail.look}}</span>)</span>
 
                         <a class="poster_likes " onclick="getCollect($(this), '318', '1')" href="javascript:void(0)">
                 <i class="like_status lm_like"></i><em>收藏</em>
@@ -77,15 +77,52 @@
                         <p>手机扫码访问：</p>
                         <img src="http://www.aoxing.me.com/Box/qrcode?url=http://www.aoxing.me.com/modals/3/318/demo" />
                     </div> <span class="btnbox">-->
-    <a class="bigbtn download notlogin"  onclick="downloadZipBox('1','0','420')">下载资源</a>
+    <a class="bigbtn download notlogin"  onclick="alert('下载积分不足，请充值');downloadZipBox('1','0','420')">下载资源</a>
+
+<div id="download_box" class="modal fade window_box">
+    <div class="pop_title">
+        <div class="pop_name">微信红色抓娃娃三级分销源码加第三方支付<span class="red">(原创)</span></div>
+        <i class="pop_close" onclick="$('#download_box').modal('hide')"></i>
+    </div>
+    <div class="pop_content" style="padding:0 70px 0 70px">
+        <div class="download_info">
+            <i class="fa fa-btc"></i> 
+            我的积分余额：
+            <span class="download_mymoney" id="download_mymoney">0</span>
+            <i class="fa fa-download"></i> 已下载次数：
+            <span class="download_times">100</span>   
+        </div>
+        <div class="download_btns clearfix">
+            <span class="download_money" id="download_money">所需积分：<span class="en money_del">900</span><span id="points_money" class="en"></span></span>
+            <a href="javascript:void(0)" onclick="downloadZip('2027', '2')" class="download_btn"><i class="fa fa-download"></i> <span id='download_start'>开始下载</span></a>  
+        </div>
+    </div>
+    <div id="points_not_enough" class="alert alert-danger top20 dou2" role="alert" style="display: none">
+        <i class="fa fa-frown-o"></i> 
+        <span id="points_enough" >亲，积分不够，多去发布资源            <b>
+                                 <a href="http://www.sucaihuo.com/Member/pay" target="_blank" style="color: #24B900; font-size:17px">在线充值</a>            </b>
+            或联系QQ416148489人工充值
+        </span>
+    </div>
+    <div id="original_download_tip" class="alert alert-danger top20 dou2" role="alert" style="display: none">
+        <i class="fa fa-smile-o"></i> 
+        <span >亲，vip会员下载<strong>原创</strong>作品 积分<strong style='font-size:16px;'>5</strong> 折。 </span>
+        <p>PS:尊重原创作者劳动成果，感谢分享！</p>
+        <p>充值方式：<b><a href="http://www.sucaihuo.com/Member/pay" target="_blank" style="color: #24B900; font-size:17px">在线充值</a></b> 或联系QQ416148489人工充值</p>
+    </div>
+
+</div>
+
     <span class="dlcount">
         下载积分：
         <strong class="orange">{{detail.je}}</strong>
         积分    </span>
                     </span>
                 </div>
-                <p>程序员，你不是一个人；网站开发QQ群：35291327在线<a href="http://www.aoxing.me.com/Member/pay.html"><span style="color: #ff0000;"><b>充值</b></span></a>，或联系QQ416148489直接充值
-                    <input class="submit_button" value="网站结构图" type="button" onclick="getTemplatesMap('318');">
+                <p>
+                    <!--程序员，你不是一个人；网站开发QQ群：35291327-->
+                    <a href="/pay"><span style="color: #ff0000;"><b>在线充值</b></span></a>，或联系QQ{{include './comms/item/serviceQQ'}}直接充值
+                    <!--<input class="submit_button" value="网站结构图" type="button" onclick="getTemplatesMap('318');">-->
                 </p>
                 <!--<div class="description">
                     <h3>网站模板结构图(<span class="orange">5</span>)</h3>
@@ -109,7 +146,7 @@
             <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css" />
             <div class="detail_foot clearfix">
                 <div class="tagged_with">
-                    <span class="gray">标签：</span>
+                    <!--<span class="gray">标签：</span>-->
                     <!--<a target="_blank" class="button3 white" href="http://www.aoxing.me.com/templates/tag-网络公司">网络公司</a>
                     <a target="_blank" class="button3 white" href="http://www.aoxing.me.com/templates/tag-网站建设">网站建设</a>-->
                 </div>
@@ -151,7 +188,7 @@
                     <i class="fa fa-frown-o"></i>
                     <span id="points_enough">亲，积分不够，多去发布资源            <b>
                                  <a href="http://www.aoxing.me.com/Member/pay" target="_blank" style="color: #24B900; font-size:17px">在线充值</a>            </b>
-            或联系QQ416148489人工充值
+            或联系QQ{{include './comms/item/serviceQQ'}}人工充值
         </span>
                 </div>
                 <div id="original_download_tip" class="alert alert-danger top20 dou2" role="alert" style="display: none">

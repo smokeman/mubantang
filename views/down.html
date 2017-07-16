@@ -1,0 +1,797 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>微信红色抓娃娃三级分销源码加第三方支付 - 素材火</title>
+        <meta name="keywords" content="php微信夹娃娃,php微信抓娃娃" /> 
+        <meta name="description" content="微信夹娃娃抓娃娃抓猴子游戏三级分销源码微信游戏源码第三方支付，PHP很火的微信抓娃娃红色版" /> 
+        <link rel="shortcut icon" href="/Public/images/favicon.ico" type="image/x-icon" /> 
+        <link rel="stylesheet" href="/Public/css/style_version4.css" type="text/css" /> 
+                    </head> 
+    <body> 
+        <div id="site_nav" class="site_nav">
+            <div  class="sn_container w clearfix">
+                <ul class="tg_tools fr">
+                    <li class="no-hover">
+                        <a href="http://www.sucaihuo.com/Member/pay.html" rel="nofollow" class="head_pay_btn common_color" style="color:#5188a6">充值积分</a>
+                        <a href="http://www.sucaihuo.com/Member/pay.html#form_pay3" rel="nofollow" class="head_pay_btn common_color" style="color:#5188a6">充值火币</a>
+                        <a href="http://www.sucaihuo.com/Member/pay.html#form_pay2" rel="nofollow" class="head_pay_btn common_color" style="color:#f60">充值会员</a>
+                    </li>
+                    <li class="no-hover" style="display: none">
+                        <a id="msg_notify" class="msg_notify" rel="nofollow" href="http://www.sucaihuo.com/Member/message.html"></a>
+                    </li>
+                    <li class='box_color nav_home'>
+                        <span><a href="http://www.sucaihuo.com/Member/info.html" rel="nofollow">个人中心</a></span><b class="icon"></b>
+                        <ul>
+                            <li><a href="http://www.sucaihuo.com/Member/info.html" rel="nofollow"><span>我的主页</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/Member/set.html" rel="nofollow"><span>个人设置</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/Member/downloads.html" rel="nofollow"><span>下载记录</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/Member/collects.html" rel="nofollow"><span>我的收藏</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/Member/sign.html" rel="nofollow"><span>我的签到</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/Download/logout?r=/php/2027.html" rel="nofollow"><span>退出登录</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="tg-line icon"></li>
+                    <li class='box_color'>
+                        <span>帮助中心</span><b class="icon"></b>
+                        <ul>
+                            <li><a href="http://www.sucaihuo.com/help/template"><span>扒模板</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/help/points"><span>积分获取</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/help/contact"><span>联系我们</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/help/index"><span>关于我们</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/help/job"><span>招纳贤士</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="tg-line icon"></li>
+                    <li class='box_color'>
+                        <span><a href="http://www.sucaihuo.com/uploads/index" class="common_color">上传资源</a></span><b class="icon"></b>
+                        <ul>
+                            <li><a href="http://www.sucaihuo.com/Member/uploads"><span>我的上传</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/uploads/js"><span>上传特效</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/uploads/templates"><span>上传模板</span></a></li>
+                            <li><a href="http://www.sucaihuo.com/uploads/php"><span>上传PHP</span></a></li>
+                            <!--                                                    <li><a href="http://www.sucaihuo.com/uploads/source"><span>上传源码</span></a></li>-->
+                        </ul>
+                    </li>
+                    <li class="tg-line icon"></li>
+                    <li class="no-hover">
+                        <a class="head_pay_btn common_color" href='http://www.sucaihuo.com/tools' rel="nofollow" style="color:red">工具箱</a>
+                    </li>
+                </ul>
+                <ul class="tg_tools fl" id="login_area" >
+                    <li class="tg_tools_home no-hover"><i class="icon-more"></i><span><a href="http://www.sucaihuo.com">素材火首页</a></span></li>
+
+                                            <li class="no-hover nologin"><span><a href="http://www.sucaihuo.com/Index/login/type/qq.html"><img alt="Connect_logo_6.png" src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/Connect_logo_6.png" style="position: relative;top:3px;"/></a></span></li>
+                        <!--                                                <li class="no-hover nologin"><span><a href="http://www.sucaihuo.com/login.html" class="sn_login">登录</a></span></li>-->
+                        <li class="no-hover hide haslogin"><span><a href="http://www.sucaihuo.com/Member/info.html"><font class="sn_login username common_color" id='head_username'></font></a></span>
+                            <i class="icon_vip"></i>
+                        </li>
+                        <li class="tg-line icon"></li>
+                        <li class="no-hover nologin"><span><a href="http://www.sucaihuo.com/reg.html">注册</a></span></li>
+                        <li class="no-hover hide haslogin"><span><a href="http://www.sucaihuo.com/Download/logout?r=/php/2027.html">退出</a></span></li>                    <li class='box_color nav_home' id="nav_login">
+                            <span><a href="http://www.sucaihuo.com/login.html" class="sn_login common_color">登录</a></span><b class="icon"></b>
+                            <ul>
+                                <li><a href="http://www.sucaihuo.com/Index/login/type/sina.html"><span>新浪微博</span></a></li>
+                                <li><a href="http://www.sucaihuo.com/Index/login/type/renren.html"><span>人人网<i style="visibility: hidden">站</i></span></a></li>
+                            </ul>
+                        </li>                </ul>
+            </div>
+        </div>
+        <div id="header">
+            <div class="tg_tools_home w">
+                <div class="bbs_enter">
+                    <a class="bbs-banner"  href="http://www.sucaihuo.com/Member/pay.html" target="_blank"><img src="/Public/images/other/banner.jpg" alt="扒模板"/></a>
+                </div>
+                <div class="logo">
+                    <a class="logo-bd"  href="http://www.sucaihuo.com"><img src="/Public/images/logo.png" alt="素材火"/></a>
+                </div>
+                <form action="http://www.sucaihuo.com/search" method="GET" id="form_search" onsubmit="return searchSub()">
+                    <div id='search' class="search">
+                        <div class="search_area">
+                            <input type='submit' value='搜 索' class='btn_search common_bgcolor'/>
+                            <div class="search_select">
+                                <span class="icon-search"></span>
+                            </div>
+                            <input type='text' value='请输入搜索内容'  class="search_input"  autocomplete="off" id="search_input" data-default="请输入搜索内容" onblur="checkInputBlur($(this))" onfocus="checkInputFocus($(this))" />
+                            <input type="hidden" name="keyword"/>
+                            <input type='hidden' name='mtype' id='mtype_index' value=''/>
+                        </div>
+                        <div class="search_box hide" id="search_box"></div>
+                        <div class='search_keywords' >
+                            <span>热门搜索：</span>
+                            <a href="http://www.sucaihuo.com/search.html?keyword=手机&mtype=1">手机</a>
+                            <a href="http://www.sucaihuo.com/php/217-0-0-0" class="red">支付</a>
+                            <a href="http://www.sucaihuo.com/search.html?keyword=bootstrap&mtype=1">bootstrap</a>
+                            <a href="http://www.sucaihuo.com/php/218-0-0-0" class="red">微信</a>
+                            <a href="http://www.sucaihuo.com/search.html?keyword=后台&mtype=1">后台</a>
+                            <a href="http://www.sucaihuo.com/search.html?keyword=上传&mtype=20">上传</a>
+                            <a href="http://www.sucaihuo.com/php/127-0-0-0" class="red">Thinkphp</a>
+                            <a href="http://www.sucaihuo.com/templates/0-0-52-0-0-0">响应式</a>
+                            <a href="http://www.sucaihuo.com/search?keyword=分销&mtype=15" class="red">分销</a>
+                            <a href="http://www.sucaihuo.com/video/143-0-0" class="red">php视频</a>
+                            <a href="http://www.sucaihuo.com/search.html?keyword=o2o&mtype=15" class="red">o2o</a>
+                               <a href="http://www.sucaihuo.com/video/157-0-0">WEB前端</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div id='nav' class='nav common_bgcolor'>
+            <div class='nav_main clearfix w'>
+                <a href='http://www.sucaihuo.com' class="menu">首 页</a>
+                <a href='http://www.sucaihuo.com/js' class="menu">网页特效</a>
+
+                <a href='http://www.sucaihuo.com/php' class="menu current">PHP/Mysql</a>
+                <a href='http://www.sucaihuo.com/templates' class="menu">网站模板</a>
+                <a href='http://www.sucaihuo.com/video' class="menu">视频教程</a>
+                                <!--                -->
+                <a href='http://www.sucaihuo.com/topic' class="menu">话题社区</a>
+                <a href='http://www.sucaihuo.com/site' class="menu">酷站欣赏</a>
+                <!--                <a href='http://www.sucaihuo.com/tools' class="menu">工具箱</a>-->
+                <a href='http://www.sucaihuo.com/help/template' class="menu">扒模板</a>
+                <a href='http://www.sucaihuo.com/source' class="menu" style="display: block;width:88px">整站源码</a>
+                <!--                <a href='http://idc.sucaihuo.com/' class="menu" target="_blank">服务器</a>-->
+                <span class='icon_hot'></span>
+            </div>
+        </div>
+<div class="breadcrumbs w">
+    <span>&gt;</span><a href="http://www.sucaihuo.com/php">PHP</a>
+    <span>&gt;</span><a href="http://www.sucaihuo.com/js/15-0-0-0">PHP</a>
+    <span>&gt;</span>微信红色抓娃娃三级分销源码加第三方支付        
+</div>
+<div  class="container w clearfix">
+
+    <div class="detail">
+        <div class="head">
+    <div class="head_inner">
+        <img class="round-image" width="50" height="50" alt="头像" src="http://www.sucaihuo.com/other/avatar/dir/1.jpg" />
+        <h1 class="clearfix">微信红色抓娃娃三级分销源码加第三方支付【<b class="red">原创</b>】</h1>
+        <div class="share_collect">
+            <!--             <a id="share-list" class="share-list"  href="javascript:void(0)" onclick="shareWeibo('2027', '2')">
+                                <b></b>
+                                <em>腾讯微博分享</em>
+                            </a>-->
+            <div class="bdsharebuttonbox"><a class="bds_more" href="#" data-cmd="more"></a><a class="bds_tsina" title="分享到新浪微博" href="#" data-cmd="tsina"></a><a class="bds_tieba" title="分享到百度贴吧" href="#" data-cmd="tieba"></a><a class="bds_qzone" title="分享到QQ空间" href="#" data-cmd="qzone"></a><a class="bds_sqq" title="分享到QQ好友" href="#" data-cmd="sqq"></a><a class="bds_tqq" title="分享到腾讯微博" href="#" data-cmd="tqq"></a><a class="bds_renren" title="分享到人人网" href="#" data-cmd="renren"></a><a class="bds_douban" title="分享到豆瓣网" href="#" data-cmd="douban"></a><a class="bds_mshare" title="分享到一键分享" href="#" data-cmd="mshare"></a></div>
+            <script>window._bd_share_config = {"common": {"bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16"}, "share": {}};
+    with (document)
+        0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+
+        </div>
+        <p class="info">
+            <span class="fr">来源：http://www.sucaihuo.com/php/2027.html</span>
+            <span class='red'>素材火管理员</span>            <span class="addtime">2017-05-25 14:26</span><span>浏览(<span>4494</span>)</span>
+
+            <a class="poster_likes " onclick="getCollect($(this), '2027', '2')" href="javascript:void(0)">
+                <i class="like_status lm_like"></i><em>收藏</em>
+            </a>
+        </p>
+    </div>
+</div>
+        <div class="content">
+            <p>账号123，密码123  无需公众号（想要在微信内自动登录，必须绑定认证服务号），支付方式有第三方平台 +微信支付（必须在后台配置，演示没有）</p>
+            <div class="template_description">
+                微信夹娃娃抓娃娃抓猴子游戏三级分销源码微信游戏源码第三方支付，PHP很火的微信抓娃娃红色版            </div>
+          
+            <div class="demo_image">
+                <a href="http://66.pingantao.cn " target="_blank" rel="nofollow"><img alt="微信红色抓娃娃三级分销源码加第三方支付" src="http://www.sucaihuo.com/jquery/20/2027/big.jpg"></a>
+                
+            </div>
+
+            <div class="template_feature">
+                <span class='feature'>分类：<a href="http://www.sucaihuo.com/php/15-0-0-0" target="_blank">PHP</a> 
+                    &gt; <a href="http://www.sucaihuo.com/php/222-0-0-0" target="_blank">抽奖</a></span>
+                <span class='feature'>难易：<a href="http://www.sucaihuo.com/php/0-4-0-0" target="_blank">初级</a></span>
+            </div>
+              <p>程序员，你不是一个人；网站开发QQ群：35291327，在线<a href="http://www.sucaihuo.com/Member/pay.html"><span style="color: #ff0000;"><b>充值</b></span></a>，或联系QQ416148489直接充值</p>
+
+
+            <div class="buttons">
+                <span class="btnbox">
+                        <a class="bigbtn demo" id="btn_demo" href="http://66.pingantao.cn " target="_blank" rel="nofollow">查看演示</a>
+                        <span class="dlnum">
+                            下载资源：
+                            <strong class="orange">100</strong>
+                            次
+                        </span>
+                    </span>
+                    <div class="qrcode_box" id="qrcode_box">
+            <p>手机扫码访问：</p>
+            <img src="http://www.sucaihuo.com/Box/qrcode?url=http://66.pingantao.cn "/>
+        </div>                <span class="btnbox">
+    <a class="bigbtn download notlogin"  onclick="downloadZipBox('1','0','900')">下载资源</a>
+    <span class="dlcount">
+        下载积分：
+        <strong class="orange">900</strong>
+        积分    </span>
+</span>
+            </div>
+
+            <h3>集成支付方式如下：</h3>                <h3>微信支付（必须在后台配置，演示没有）</h3>                <h3>支付宝官方</h3>                <h3>APP微信支付</h3>                <h3>掌上支付</h3>                <h3>支付宝寻单</h3>                <h3>APP支付宝支付</h3>                <h3>汇付宝微信</h3>                <h3>汇付宝网银</h3>                <h3>汇付宝快捷支付</h3>                <h3>铭翼聚合支付</h3>                <h3>微信夹娃娃游戏截图</h3>                <img src='http://www.sucaihuo.com/uploads/course/2017/05/25/1495693575882.jpg'><img src='http://www.sucaihuo.com/uploads/course/2017/05/25/1495693575829.jpg'><h3>抓娃娃后台</h3>                <p>后台 admin.php，账号 admin 密码 123456</p>                <img src='http://www.sucaihuo.com/uploads/course/2017/05/31/1496184634286.jpg'><img src='http://www.sucaihuo.com/uploads/course/2017/05/31/1496184634824.jpg'><img src='http://www.sucaihuo.com/uploads/course/2017/05/31/1496184634114.jpg'><img src='http://www.sucaihuo.com/uploads/course/2017/05/31/1496184634610.jpg'><img src='http://www.sucaihuo.com/uploads/course/2017/05/31/1496184634918.jpg'><img src='http://www.sucaihuo.com/uploads/course/2017/05/31/1496184634112.jpg'>                    </div>
+        <link rel="stylesheet" href="/Public/css/font-awesome.min.css" type="text/css" /> 
+<div class="detail_foot clearfix">
+    <div class="tagged_with">
+            <span class="gray">标签：</span>
+            <a target="_blank" class="button3 white" href="http://www.sucaihuo.com/js/tag-支付">支付</a><a target="_blank" class="button3 white" href="http://www.sucaihuo.com/js/tag-微信">微信</a><a target="_blank" class="button3 white" href="http://www.sucaihuo.com/js/tag-朋友圈">朋友圈</a><a target="_blank" class="button3 white" href="http://www.sucaihuo.com/js/tag-吸粉">吸粉</a><a target="_blank" class="button3 white" href="http://www.sucaihuo.com/js/tag-推广">推广</a><a target="_blank" class="button3 white" href="http://www.sucaihuo.com/js/tag-夹娃娃">夹娃娃</a><a target="_blank" class="button3 white" href="http://www.sucaihuo.com/js/tag-抓娃娃">抓娃娃</a>        </div>    <div class="declare"><span>声明：</span>本文为原创文章，如需转载，请注明来源<a href="http://www.sucaihuo.com">sucaihuo.com</a>并保留原文链接：<a href='http://www.sucaihuo.com/php/2027.html'>http://www.sucaihuo.com/php/2027.html</a></div>    
+    <!--    <div class="alipay">
+            <strong>如果您觉得本文的内容对您的学习有所帮助，您可以扫描下面的二维码请我喝杯茶，感谢！</strong>
+            <div class="alipay_img">
+                <img src="/Public/images/pay.jpg" alt="alipay转账">
+            </div>
+        </div>-->
+    <div class="page_nav clearfix">
+        <div class="next_page" title="下一篇">
+            <a href="http://www.sucaihuo.com/js/2028.html" target="_blank">html5手机省市区城市选择代码</a>        </div>
+        <div class="pre_page" title="上一篇">
+            <a href="http://www.sucaihuo.com/js/2026.html" target="_blank">Thinkphp微信夹娃娃蓝色源码</a>
+        </div>
+
+    </div>
+    
+    <div class="comments">
+        <div class="title">
+            评论<span class="num_area">（<em class="comments_num" id="comments_num">66</em>）</span>
+        </div>  
+
+        <div class="comment_send clearfix">
+            <div class="comment_avatar">
+                <span class="userPic">
+                    <img class='userPic avatar user_my_avatar' width="60" height="60" src="/Public/images/avatar.jpg" alt="头像">
+                </span>
+                <font class="username"></font>
+            </div>
+            <div class="comment_sendPart" id='reply_0'>
+                <textarea id="textareaComment" class="textarea_comment" name="content"  autocomplete="off"  data-default="发布评论" onblur="checkInputBlur($(this))" onfocus="checkInputFocus($(this));
+                        if ($(this).val() != '发布评论')
+                            $(this).css({'color': '#333'})">发布评论</textarea>
+                <div class="btn_p clearfix">
+                    <span class="comment_tip" id="comment_tip_0" data-top="11" data-foot="36"></span>
+                    <button class="btn_subGrey btn" type="button" onclick="subcomment('2027', '2', 0)">提 交</button>
+                    <span class="emotion" tabindex="1" data-id='0'></span>
+                </div>
+                <p style="color:red;font-weight:bold">友情提示：垃圾评论一律封号...</p>
+            </div>
+        </div>
+        <div  class="comment_wrap" id="comment_wrap">
+            <ul class="comment_listBox">
+                <li class="comment_list clearfix" id="comment_59939" >
+                    <div class="comment_avatar">
+                        <span class='userPic'><img width="36" height="36" src="http://www.sucaihuo.com/Public/images/avatar.jpg" alt="头像"></span>
+                        <span class="grey">65楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time">前天 07-14 10:22</div> p小猿                        </div>
+                        <div class="comment_conWrap clearfix">
+                            <div class="comment_action"><a class="reply" onclick="reply_btn('59939')">回复</a> </div>
+                            <div class="comment_con">楼主，要这么多积分</div>
+                        </div>
+                        <div id='reply_59939' class='reply_area'>
+                            <textarea  class="textarea_comment" name="content" autocomplete="off"></textarea>
+                            <div class="btn_p clearfix">
+                                <span class="comment_tip" id="comment_tip_59939" data-top="4" data-foot="29"></span>
+                                <button class="btn_subGrey btn" onclick="subcomment('2027', '2', '59939', 0)" type="button">提交</button>
+                                <span class="emotion" tabindex="1" data-id='59939'></span>
+                            </div>
+                        </div>
+                        <div class="blockquote_wrap">
+                                                    </div>
+                    </div>
+                    </li><li class="comment_list clearfix" id="comment_59904" >
+                    <div class="comment_avatar">
+                        <span class='userPic'><img width="36" height="36" src="http://www.sucaihuo.com/Public/images/avatar.jpg" alt="头像"></span>
+                        <span class="grey">64楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time">前天 07-14 08:51</div> <span class='red'>欢乐豆123</span>                        </div>
+                        <div class="comment_conWrap clearfix">
+                            <div class="comment_action"><a class="reply" onclick="reply_btn('59904')">回复</a> </div>
+                            <div class="comment_con">积分真的有点恐怖啊</div>
+                        </div>
+                        <div id='reply_59904' class='reply_area'>
+                            <textarea  class="textarea_comment" name="content" autocomplete="off"></textarea>
+                            <div class="btn_p clearfix">
+                                <span class="comment_tip" id="comment_tip_59904" data-top="4" data-foot="29"></span>
+                                <button class="btn_subGrey btn" onclick="subcomment('2027', '2', '59904', 0)" type="button">提交</button>
+                                <span class="emotion" tabindex="1" data-id='59904'></span>
+                            </div>
+                        </div>
+                        <div class="blockquote_wrap">
+                                                    </div>
+                    </div>
+                    </li><li class="comment_list clearfix" id="comment_59532" >
+                    <div class="comment_avatar">
+                        <span class='userPic'><img width="36" height="36" src="http://www.sucaihuo.com/Public/images/avatar.jpg" alt="头像"></span>
+                        <span class="grey">63楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time">07-12 08:09</div> 3119922324                        </div>
+                        <div class="comment_conWrap clearfix">
+                            <div class="comment_action"><a class="reply" onclick="reply_btn('59532')">回复</a> </div>
+                            <div class="comment_con">900积分有点恐怖啊</div>
+                        </div>
+                        <div id='reply_59532' class='reply_area'>
+                            <textarea  class="textarea_comment" name="content" autocomplete="off"></textarea>
+                            <div class="btn_p clearfix">
+                                <span class="comment_tip" id="comment_tip_59532" data-top="4" data-foot="29"></span>
+                                <button class="btn_subGrey btn" onclick="subcomment('2027', '2', '59532', 0)" type="button">提交</button>
+                                <span class="emotion" tabindex="1" data-id='59532'></span>
+                            </div>
+                        </div>
+                        <div class="blockquote_wrap">
+                                                    </div>
+                    </div>
+                    </li><li class="comment_list clearfix" id="comment_59299" >
+                    <div class="comment_avatar">
+                        <span class='userPic'><img width="36" height="36" src="http://www.sucaihuo.com/Public/images/avatar.jpg" alt="头像"></span>
+                        <span class="grey">62楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time">07-10 13:15</div> 18593969375                        </div>
+                        <div class="comment_conWrap clearfix">
+                            <div class="comment_action"><a class="reply" onclick="reply_btn('59299')">回复</a> </div>
+                            <div class="comment_con">猴年马月才能弄完</div>
+                        </div>
+                        <div id='reply_59299' class='reply_area'>
+                            <textarea  class="textarea_comment" name="content" autocomplete="off"></textarea>
+                            <div class="btn_p clearfix">
+                                <span class="comment_tip" id="comment_tip_59299" data-top="4" data-foot="29"></span>
+                                <button class="btn_subGrey btn" onclick="subcomment('2027', '2', '59299', 0)" type="button">提交</button>
+                                <span class="emotion" tabindex="1" data-id='59299'></span>
+                            </div>
+                        </div>
+                        <div class="blockquote_wrap">
+                                                    </div>
+                    </div>
+                    </li><li class="comment_list clearfix" id="comment_59090" >
+                    <div class="comment_avatar">
+                        <span class='userPic'><img width="36" height="36" src="http://www.sucaihuo.com/Public/images/avatar.jpg" alt="头像"></span>
+                        <span class="grey">61楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time">07-08 13:34</div> <span class='red'>UID6668888</span>                        </div>
+                        <div class="comment_conWrap clearfix">
+                            <div class="comment_action"><a class="reply" onclick="reply_btn('59090')">回复</a> </div>
+                            <div class="comment_con">在赞赞！！！</div>
+                        </div>
+                        <div id='reply_59090' class='reply_area'>
+                            <textarea  class="textarea_comment" name="content" autocomplete="off"></textarea>
+                            <div class="btn_p clearfix">
+                                <span class="comment_tip" id="comment_tip_59090" data-top="4" data-foot="29"></span>
+                                <button class="btn_subGrey btn" onclick="subcomment('2027', '2', '59090', 0)" type="button">提交</button>
+                                <span class="emotion" tabindex="1" data-id='59090'></span>
+                            </div>
+                        </div>
+                        <div class="blockquote_wrap">
+                                                    </div>
+                    </div>
+                    </li><li class="comment_list clearfix" id="comment_59072" style='border-bottom:none'>
+                    <div class="comment_avatar">
+                        <span class='userPic'><img width="36" height="36" src="http://www.sucaihuo.com/Public/images/avatar.jpg" alt="头像"></span>
+                        <span class="grey">60楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time">07-08 10:13</div> <span class='red'>yanlinlin080604</span>                        </div>
+                        <div class="comment_conWrap clearfix">
+                            <div class="comment_action"><a class="reply" onclick="reply_btn('59072')">回复</a> </div>
+                            <div class="comment_con">这个游戏不错</div>
+                        </div>
+                        <div id='reply_59072' class='reply_area'>
+                            <textarea  class="textarea_comment" name="content" autocomplete="off"></textarea>
+                            <div class="btn_p clearfix">
+                                <span class="comment_tip" id="comment_tip_59072" data-top="4" data-foot="29"></span>
+                                <button class="btn_subGrey btn" onclick="subcomment('2027', '2', '59072', 0)" type="button">提交</button>
+                                <span class="emotion" tabindex="1" data-id='59072'></span>
+                            </div>
+                        </div>
+                        <div class="blockquote_wrap">
+                                                    </div>
+                    </div>
+                    </li><li class="comment_list clearfix" id="comment_58022" >
+                    <div class="comment_avatar">
+                        <span class='userPic'><img width="36" height="36" src="http://www.sucaihuo.com/Public/images/avatar.jpg" alt="头像"></span>
+                        <span class="grey">59楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time">06-30 08:56</div> shroo                        </div>
+                        <div class="comment_conWrap clearfix">
+                            <div class="comment_action"><a class="reply" onclick="reply_btn('58022')">回复</a> </div>
+                            <div class="comment_con">攒了这么久，买一个</div>
+                        </div>
+                        <div id='reply_58022' class='reply_area'>
+                            <textarea  class="textarea_comment" name="content" autocomplete="off"></textarea>
+                            <div class="btn_p clearfix">
+                                <span class="comment_tip" id="comment_tip_58022" data-top="4" data-foot="29"></span>
+                                <button class="btn_subGrey btn" onclick="subcomment('2027', '2', '58022', 0)" type="button">提交</button>
+                                <span class="emotion" tabindex="1" data-id='58022'></span>
+                            </div>
+                        </div>
+                        <div class="blockquote_wrap">
+                                                    </div>
+                    </div>
+                    </li><li class="comment_list clearfix" id="comment_57983" >
+                    <div class="comment_avatar">
+                        <span class='userPic'><img width="36" height="36" src="http://www.sucaihuo.com/other/avatar/dir/14040.jpg" alt="头像"></span>
+                        <span class="grey">58楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time">06-29 19:53</div> 风在默默的吹                        </div>
+                        <div class="comment_conWrap clearfix">
+                            <div class="comment_action"><a class="reply" onclick="reply_btn('57983')">回复</a> </div>
+                            <div class="comment_con"><br /><br />你确定这么贵我们买的起？啊啊<br /></div>
+                        </div>
+                        <div id='reply_57983' class='reply_area'>
+                            <textarea  class="textarea_comment" name="content" autocomplete="off"></textarea>
+                            <div class="btn_p clearfix">
+                                <span class="comment_tip" id="comment_tip_57983" data-top="4" data-foot="29"></span>
+                                <button class="btn_subGrey btn" onclick="subcomment('2027', '2', '57983', 0)" type="button">提交</button>
+                                <span class="emotion" tabindex="1" data-id='57983'></span>
+                            </div>
+                        </div>
+                        <div class="blockquote_wrap">
+                                                    </div>
+                    </div>
+                    </li><li class="comment_list clearfix" id="comment_57974" >
+                    <div class="comment_avatar">
+                        <span class='userPic'><img width="36" height="36" src="http://www.sucaihuo.com/Public/images/avatar.jpg" alt="头像"></span>
+                        <span class="grey">57楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time">06-29 17:21</div> <span class='red'>550515349@qq.com</span>                        </div>
+                        <div class="comment_conWrap clearfix">
+                            <div class="comment_action"><a class="reply" onclick="reply_btn('57974')">回复</a> </div>
+                            <div class="comment_con">你确定这么贵我们买的起？</div>
+                        </div>
+                        <div id='reply_57974' class='reply_area'>
+                            <textarea  class="textarea_comment" name="content" autocomplete="off"></textarea>
+                            <div class="btn_p clearfix">
+                                <span class="comment_tip" id="comment_tip_57974" data-top="4" data-foot="29"></span>
+                                <button class="btn_subGrey btn" onclick="subcomment('2027', '2', '57974', 0)" type="button">提交</button>
+                                <span class="emotion" tabindex="1" data-id='57974'></span>
+                            </div>
+                        </div>
+                        <div class="blockquote_wrap">
+                                                    </div>
+                    </div>
+                    </li><li class="comment_list clearfix" id="comment_57687" style='border-bottom:none'>
+                    <div class="comment_avatar">
+                        <span class='userPic'><img width="36" height="36" src="http://www.sucaihuo.com/Public/images/avatar.jpg" alt="头像"></span>
+                        <span class="grey">56楼</span>
+                    </div>
+                    <div class="comment_conBox">
+                        <div class="comment_avatar_time">
+                            <div class="time">06-27 16:40</div> <span class='red'>UID6668888</span>                        </div>
+                        <div class="comment_conWrap clearfix">
+                            <div class="comment_action"><a class="reply" onclick="reply_btn('57687')">回复</a> </div>
+                            <div class="comment_con">有点贵！！先存存积分！！</div>
+                        </div>
+                        <div id='reply_57687' class='reply_area'>
+                            <textarea  class="textarea_comment" name="content" autocomplete="off"></textarea>
+                            <div class="btn_p clearfix">
+                                <span class="comment_tip" id="comment_tip_57687" data-top="4" data-foot="29"></span>
+                                <button class="btn_subGrey btn" onclick="subcomment('2027', '2', '57687', 0)" type="button">提交</button>
+                                <span class="emotion" tabindex="1" data-id='57687'></span>
+                            </div>
+                        </div>
+                        <div class="blockquote_wrap">
+                                                    </div>
+                    </div>
+                    </li>            </ul>
+            <div class="pager" id="detail-page" data-id="2027" data-mtype='2' data-totalnum="66">  <a class="current" data-page=1>1</a><a class="num" data-page="2">2</a><a class="num" data-page="3">3</a><a class="num" data-page="4">4</a><a class="num" data-page="5">5</a><a class="num" data-page="6">6</a><a class="num" data-page="7">7</a>  <a class="next" data-page="2">下一页</a></div>        </div>
+    </div>
+</div>
+<div class="smileBoxOuter" id="smileBoxOuter" tabindex="2">
+    <ul class="smileBox">
+        <li><a href="javascript:void(0)" class="smile1" title="糗大了"></a></li><li><a href="javascript:void(0)" class="smile2" title="示爱"></a></li><li><a href="javascript:void(0)" class="smile3" title="晕"></a></li><li><a href="javascript:void(0)" class="smile4" title="酷"></a></li><li><a href="javascript:void(0)" class="smile5" title="流泪"></a></li><li><a href="javascript:void(0)" class="smile6" title="饿了"></a></li><li><a href="javascript:void(0)" class="smile7" title="闭嘴"></a></li><li><a href="javascript:void(0)" class="smile8" title="做鬼脸"></a></li><li><a href="javascript:void(0)" class="smile9" title="馋"></a></li><li><a href="javascript:void(0)" class="smile10" title="坏笑"></a></li><li><a href="javascript:void(0)" class="smile11" title="抓狂"></a></li><li><a href="javascript:void(0)" class="smile12" title="呵呵"></a></li><li><a href="javascript:void(0)" class="smile13" title="淡定"></a></li><li><a href="javascript:void(0)" class="smile14" title="冷汗"></a></li><li><a href="javascript:void(0)" class="smile15" title="色"></a></li><li><a href="javascript:void(0)" class="smile16" title="惊讶"></a></li><li><a href="javascript:void(0)" class="smile17" title="希望"></a></li><li><a href="javascript:void(0)" class="smile18" title="伤心"></a></li><li><a href="javascript:void(0)" class="smile19" title="微笑"></a></li><li><a href="javascript:void(0)" class="smile20" title="惊吓"></a></li><li><a href="javascript:void(0)" class="smile21" title="哈哈"></a></li><li><a href="javascript:void(0)" class="smile22" title="吃饭"></a></li><li><a href="javascript:void(0)" class="smile23" title="观察"></a></li><li><a href="javascript:void(0)" class="smile24" title="高兴"></a></li><li><a href="javascript:void(0)" class="smile25" title="皱眉"></a></li><li><a href="javascript:void(0)" class="smile26" title="大囧"></a></li><li><a href="javascript:void(0)" class="smile27" title="邪恶"></a></li><li><a href="javascript:void(0)" class="smile28" title="锁眉"></a></li><li><a href="javascript:void(0)" class="smile29" title="惊喜"></a></li><li><a href="javascript:void(0)" class="smile30" title="小怒"></a></li><li><a href="javascript:void(0)" class="smile31" title="无语"></a></li><li><a href="javascript:void(0)" class="smile32" title="傻笑"></a></li><li><a href="javascript:void(0)" class="smile33" title="黑线"></a></li><li><a href="javascript:void(0)" class="smile34" title="喜极而泣"></a></li><li><a href="javascript:void(0)" class="smile35" title="口水"></a></li><li><a href="javascript:void(0)" class="smile36" title="不说话"></a></li><li><a href="javascript:void(0)" class="smile37" title="抽烟"></a></li><li><a href="javascript:void(0)" class="smile38" title="汗"></a></li><li><a href="javascript:void(0)" class="smile39" title="尴尬"></a></li><li><a href="javascript:void(0)" class="smile40" title="小眼睛"></a></li><li><a href="javascript:void(0)" class="smile41" title="龇牙"></a></li><li><a href="javascript:void(0)" class="smile42" title="亲亲"></a></li><li><a href="javascript:void(0)" class="smile43" title="哭泣"></a></li><li><a href="javascript:void(0)" class="smile44" title="大吃一惊"></a></li>    </ul>
+    <ul class="smileBox" style="display:none;">
+        <li><a href="javascript:void(0)" class="smile46" title="不高兴"></a></li><li><a href="javascript:void(0)" class="smile47" title="得意"></a></li><li><a href="javascript:void(0)" class="smile48" title="阴脸"></a></li><li><a href="javascript:void(0)" class="smile49" title="装大款"></a></li><li><a href="javascript:void(0)" class="smile50" title="吐舌"></a></li><li><a href="javascript:void(0)" class="smile51" title="暗地观察"></a></li><li><a href="javascript:void(0)" class="smile52" title="吐血"></a></li><li><a href="javascript:void(0)" class="smile53" title="脸红"></a></li><li><a href="javascript:void(0)" class="smile54" title="肿包"></a></li><li><a href="javascript:void(0)" class="smile55" title="抠鼻"></a></li><li><a href="javascript:void(0)" class="smile56" title="赞一个"></a></li><li><a href="javascript:void(0)" class="smile57" title="中指"></a></li><li><a href="javascript:void(0)" class="smile58" title="期待"></a></li><li><a href="javascript:void(0)" class="smile59" title="倒地"></a></li><li><a href="javascript:void(0)" class="smile60" title="火冒三丈"></a></li><li><a href="javascript:void(0)" class="smile61" title="吐"></a></li><li><a href="javascript:void(0)" class="smile62" title="喷水"></a></li><li><a href="javascript:void(0)" class="smile63" title="喷血"></a></li><li><a href="javascript:void(0)" class="smile64" title="蜡烛"></a></li><li><a href="javascript:void(0)" class="smile65" title="想一想"></a></li><li><a href="javascript:void(0)" class="smile66" title="认真听讲"></a></li><li><a href="javascript:void(0)" class="smile67" title="不好意思"></a></li><li><a href="javascript:void(0)" class="smile68" title="欢呼"></a></li><li><a href="javascript:void(0)" class="smile69" title="便便"></a></li><li><a href="javascript:void(0)" class="smile70" title="鼓掌"></a></li><li><a href="javascript:void(0)" class="smile71" title="深思"></a></li><li><a href="javascript:void(0)" class="smile72" title="害羞"></a></li><li><a href="javascript:void(0)" class="smile73" title="苦恼"></a></li><li><a href="javascript:void(0)" class="smile74" title="长草"></a></li><li><a href="javascript:void(0)" class="smile75" title="无所谓"></a></li><li><a href="javascript:void(0)" class="smile76" title="咽气"></a></li><li><a href="javascript:void(0)" class="smile77" title="投降"></a></li><li><a href="javascript:void(0)" class="smile78" title="没看见"></a></li><li><a href="javascript:void(0)" class="smile79" title="击掌"></a></li><li><a href="javascript:void(0)" class="smile80" title="献黄瓜"></a></li><li><a href="javascript:void(0)" class="smile81" title="献花"></a></li><li><a href="javascript:void(0)" class="smile82" title="撞墙"></a></li><li><a href="javascript:void(0)" class="smile83" title="中刀"></a></li><li><a href="javascript:void(0)" class="smile84" title="中枪"></a></li>    </ul>
+    <div class="smilePage">
+        <a href="javascript:void(0)" class="current">1</a>
+        <a href="javascript:void(0)">2</a>
+    </div>
+</div>    
+<div id="download_box" class="modal fade window_box">
+    <div class="pop_title">
+        <div class="pop_name">微信红色抓娃娃三级分销源码加第三方支付<span class="red">(原创)</span></div>
+        <i class="pop_close" onclick="$('#download_box').modal('show')"></i>
+    </div>
+    <div class="pop_content" style="padding:0 70px 0 70px">
+        <div class="download_info">
+            <i class="fa fa-btc"></i> 
+            我的积分余额：
+            <span class="download_mymoney" id="download_mymoney">0</span>
+            <i class="fa fa-download"></i> 已下载次数：
+            <span class="download_times">100</span>   
+        </div>
+        <div class="download_btns clearfix">
+            <span class="download_money" id="download_money">所需积分：<span class="en money_del">900</span><span id="points_money" class="en"></span></span>
+            <a href="javascript:void(0)" onclick="downloadZip('2027', '2')" class="download_btn"><i class="fa fa-download"></i> <span id='download_start'>开始下载</span></a>  
+        </div>
+    </div>
+    <div id="points_not_enough" class="alert alert-danger top20 dou2" role="alert" style="display: none">
+        <i class="fa fa-frown-o"></i> 
+        <span id="points_enough" >亲，积分不够，多去发布资源            <b>
+                                 <a href="http://www.sucaihuo.com/Member/pay" target="_blank" style="color: #24B900; font-size:17px">在线充值</a>            </b>
+            或联系QQ416148489人工充值
+        </span>
+    </div>
+    <div id="original_download_tip" class="alert alert-danger top20 dou2" role="alert" style="display: none">
+        <i class="fa fa-smile-o"></i> 
+        <span >亲，vip会员下载<strong>原创</strong>作品 积分<strong style='font-size:16px;'>5</strong> 折。 </span>
+        <p>PS:尊重原创作者劳动成果，感谢分享！</p>
+        <p>充值方式：<b><a href="http://www.sucaihuo.com/Member/pay" target="_blank" style="color: #24B900; font-size:17px">在线充值</a></b> 或联系QQ416148489人工充值</p>
+    </div>
+
+</div>
+    </div>
+    <div class="sidebar">
+    <div class="sidebar_per">
+            <dl>
+                <dt>
+                <a href="http://www.sucaihuo.com/js/" class="more">更多&nbsp;<span class="more-sign">&gt;</span></a>
+                <strong>相关特效 <span class="name-en">/Relative</span></strong>
+                </dt>
+                <dd class="sidebar_articles">
+                        <span>06-27</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2236.html">高德地图微信扫码获取位置</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>06-23</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2222.html">微信授权登录一个公众号绑定多个域名的方法</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>06-21</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2216.html">PHP扫码授权登录</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>06-20</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2213.html">PHP读取二维码</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>06-19</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2198.html">ThinkPHP响应式订单系统源码加多种支付</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>06-12</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2145.html">jQuery仿手机微信聊天界面代码</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>06-07</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2120.html">微信图文编辑器</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>05-27</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2044.html">2017最火400多套html5微信小游戏</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>05-25</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2026.html">Thinkphp微信夹娃娃蓝色源码</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>05-25</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2025.html">PHP公众号端午节赛龙舟活动</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>05-25</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2023.html">支付宝、微信个人免签支付接口</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>05-22</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/2006.html">PHP获取微信收货地址</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>05-21</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/1995.html">Thinkphp微信抽奖大转盘</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>05-19</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/1973.html">那些年我们学过的小学语文html5微信吸粉游戏</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>05-16</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/1952.html">PHP微信企业号支付、支付宝手机网页支付</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>05-14</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/1933.html">php微信投票抽奖源码</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>05-10</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/1916.html">php微信朋友圈装逼图片生成器</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>05-02</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/1856.html">PHP微信聊天截图保存</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>04-27</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/1835.html">jQuery分享到各大社交平台</a>
+                    </dd><dd class="sidebar_articles">
+                        <span>04-23</span>
+                        <a target="_blank"  href="http://www.sucaihuo.com/js/1804.html">jQuery分享到各大SNS平台</a>
+                    </dd>            </dl>
+        </div>    <div class="sidebar_per">
+        <dl>
+            <dt>
+            <a href="http://www.sucaihuo.com/js/0-0-6-0" class="more">更多&nbsp;<span class="more-sign">&gt;</span></a>
+            <strong>推荐特效 <span class="name-en">/Recommed</span></strong>
+            </dt>
+            <dd class="sidebar_articles">
+                    <span>07-16</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2435.html">免费观看各大视频网站VIP视频</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-16</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2432.html">thinkphp3.2开发后台管理系统</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-13</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2403.html">Thinkphp萌娃投票女神微信投票新版</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-11</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2384.html">九宫格图片轮播滚动js特效代码</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-10</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2374.html">jQuery鼠标经过地图城市标注显示详细信息代码</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-09</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2362.html">jquery展开收缩三级下拉菜单导航代码</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-04</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2312.html">jQuery响应式产品筛选对比代码</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-04</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2305.html">jQuery手机城市索引</a>
+                </dd><dd class="sidebar_articles">
+                    <span>06-27</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2236.html">高德地图微信扫码获取位置</a>
+                </dd><dd class="sidebar_articles">
+                    <span>06-25</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2228.html">PHP手机上传裁剪头像</a>
+                </dd><dd class="sidebar_articles">
+                    <span>06-24</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2227.html">jQuery仿美团外卖订餐系统手机购物车代码</a>
+                </dd><dd class="sidebar_articles">
+                    <span>06-22</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2218.html">jQuery12种双日期插件</a>
+                </dd><dd class="sidebar_articles">
+                    <span>06-22</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2217.html">jQuery手机wap省市区联动插件</a>
+                </dd><dd class="sidebar_articles">
+                    <span>06-19</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2198.html">ThinkPHP响应式订单系统源码加多种支付</a>
+                </dd>        </dl>
+    </div>
+    <div class="sidebar_per">
+        <dl>
+            <dt>
+            <a href="http://www.sucaihuo.com/js/" class="more">更多&nbsp;<span class="more-sign">&gt;</span></a>
+            <strong>标签云 <span class="name-en">/Tag</span></strong>
+            </dt>
+            <dd class="sidebar_tags">
+            <a target="_blank" href="http://www.sucaihuo.com/js/tag-滚动.html">滚动</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-幻灯片.html">幻灯片</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-轮播.html">轮播</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-焦点图.html">焦点图</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-弹出层.html">弹出层</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-滑动.html">滑动</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-切换.html">切换</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-菜单.html">菜单</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-抽奖.html">抽奖</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-导航菜单.html">导航菜单</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-广告.html">广告</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-动画.html">动画</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-导航.html">导航</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-上传.html">上传</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-缩略图.html">缩略图</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-旋转.html">旋转</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-全屏.html">全屏</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-下拉菜单.html">下拉菜单</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-瀑布流.html">瀑布流</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-统计图.html">统计图</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-bootstrap.html">bootstrap</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-表单.html">表单</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-分页.html">分页</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-手风琴.html">手风琴</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-3d.html">3d</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-遮罩层.html">遮罩层</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-垂直.html">垂直</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-select.html">select</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-rotate.html">rotate</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-加载.html">加载</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-响应式.html">响应式</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-qq.html">qq</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-提示.html">提示</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-下拉.html">下拉</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-画廊.html">画廊</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-日期.html">日期</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-页面.html">页面</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-二级菜单.html">二级菜单</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-Slide.html">Slide</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-时间轴.html">时间轴</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-相册.html">相册</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-拖动.html">拖动</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-悬浮.html">悬浮</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-鼠标.html">鼠标</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-柱状图.html">柱状图</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-upload.html">upload</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-菜单导航.html">菜单导航</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-放大.html">放大</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-转盘.html">转盘</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-购物车.html">购物车</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-图表.html">图表</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-验证.html">验证</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-放大镜.html">放大镜</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-下拉框.html">下拉框</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-美化.html">美化</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-图片.html">图片</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-ajax.html">ajax</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-时间.html">时间</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-编辑器.html">编辑器</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-scroll.html">scroll</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-选项卡.html">选项卡</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-懒加载.html">懒加载</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-视频.html">视频</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-倒计时.html">倒计时</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-table.html">table</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-表格.html">表格</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-音频.html">音频</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-排序.html">排序</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-modal.html">modal</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-水平.html">水平</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-lottery.html">lottery</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-翻牌.html">翻牌</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-canvas.html">canvas</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-星星.html">星星</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-裁剪.html">裁剪</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-cookie.html">cookie</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-日历.html">日历</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-选择.html">选择</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-animate.html">animate</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-联动.html">联动</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-定位.html">定位</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-tab.html">tab</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-照片墙.html">照片墙</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-树.html">树</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-淘宝.html">淘宝</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-背景.html">背景</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-fullpage.html">fullpage</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-邮箱.html">邮箱</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-page.html">page</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-多级菜单.html">多级菜单</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-手机菜单.html">手机菜单</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-阴影.html">阴影</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-form.html">form</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-accordion.html">accordion</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-缩小.html">缩小</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-地图.html">地图</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-在线.html">在线</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-投票.html">投票</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-登录.html">登录</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-顶部.html">顶部</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-手机.html">手机</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-头像.html">头像</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-无限.html">无限</a><a target="_blank" href="http://www.sucaihuo.com/js/tag-验证码.html">验证码</a>            </dd>
+        </dl>
+    </div>
+    <div class="sidebar_per">
+        <dl>
+            <dt>
+            <a href="http://www.sucaihuo.com/js/" class="more">更多&nbsp;<span class="more-sign">&gt;</span></a>
+            <strong>最新特效 <span class="name-en">/New</span></strong>
+            </dt>
+            <dd class="sidebar_articles">
+                    <span>07-16</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2436.html">PHP+MySQL注册发送邮件激活账号完整版</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-16</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2435.html">免费观看各大视频网站VIP视频</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-16</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2434.html">新手ajax可编辑表格学习教程</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-16</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2433.html">jQuery手机端确认对话框插件gDialog</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-16</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2432.html">thinkphp3.2开发后台管理系统</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-16</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2431.html">jQuery仿Facebook表情选择插件</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-16</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2430.html">豆瓣音乐API数据获取</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-16</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2429.html">消息提示自定义完全版_鼠标悬停暂停_回调函数_销毁函数</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-15</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2428.html">精美的多级侧边栏导航菜单</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-15</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2427.html">轻量级移动端日期选择器mtimer</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-15</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2426.html">手机端在线聊天特效</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-15</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2425.html">带下载进度和完成状态的动态SVG下载图标按钮</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-15</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2424.html">抓住Pan金莲-悬停会跑开的按钮效果</a>
+                </dd><dd class="sidebar_articles">
+                    <span>07-15</span>
+                    <a target="_blank"  href="http://www.sucaihuo.com/js/2423.html">JQuery流程步骤工具可点击切换</a>
+                </dd>        </dl>
+    </div>
+
+</div>
+</div>
+<div class="footer" id="footer" data-url="http://www.sucaihuo.com/" data-return="www.sucaihuo.com/php/2027.html" data-logout="http://www.sucaihuo.com/Download/logout?r=/php/2027.html" data-id="2027" data-mtype="2" data-code=""> 
+    <div class="footer_main clearfix">
+
+
+        <div class="friendly">
+                        <div class="foot_menu">
+                <a href="http://www.sucaihuo.com/help/template" target="_blank">扒模板</a>
+                <a href="http://www.sucaihuo.com/help/contact" target="_blank">联系我们</a>
+                <a href="http://www.sucaihuo.com/help/index" target="_blank">关于我们</a>
+                <a href="http://www.sucaihuo.com/help/job" target="_blank">招纳贤士</a>
+                <span class="address">Copyright&copy;2010-2015 All Rights Reserved. 苏ICP备15009298</span>
+            </div>
+            <div class="contact_us">
+                <a class="qq-chat" href="http://wpa.qq.com/msgrd?v=3&uin=416148489&site=qq&menu=yes" target="_blank">
+                    <img alt="QQ在线客服" src="/Public/images/qq-chat.png">
+                </a>
+                <span class="contact_item">qq群：35291327</span>
+                <span class="contact_item">邮箱：416148489@qq.com</span>
+                <span class="contact_item">手机：18005151538</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="windown_box" class="modal fade window_box">
+    <div class="pop_title">
+        <div class="pop_name">登录</div>
+        <i class="pop_close" onclick="$('#windown_box').modal('hide')"></i>
+    </div>
+    <div class="pop_content">
+        <div class="form_item">
+            <div class="item_tip">用户名/邮箱</div>
+            <input id="email" name="email"  class="form_input" type="text" autocomplete="off" tabindex="1" value="" onblur="blurInputLoginBox($(this))"  onfocus ="focusInputLoginBox($(this))"/>
+        </div>
+        <div class="form_item">
+            <div class="item_tip">密码</div>
+            <input name="pwd" id="pwd" class="form_input" type="password" tabindex="2" value="" onblur="blurInputLoginBox($(this))"  onfocus ="focusInputLoginBox($(this))" />
+        </div>
+        <div class="captchaBox">
+            <div class="two_weeks">
+                <input id="rememberme" class="ckeckBox" type="checkbox" name="rememberme">
+                <label for="rememberme">两周内免登录</label>
+                <a  href="http://www.sucaihuo.com/reg.html" target="_blank" class="loginbox_reg">免费注册</a>
+            </div>
+        </div>
+        <p class="notice_error"></p>
+        <input id="btn_login" class="btn" type="button" onclick="sublogin()" tabindex="4" value="登  录">
+        <a class="a_underline" href="http://www.sucaihuo.com/forget.html">忘记密码？</a>
+        <div class="co_login" style="margin:20px 0 0">
+            联合登录
+            <a class="a_underline" href="http://www.sucaihuo.com/Index/login/type/qq.html">腾讯QQ</a>
+            <a class="a_underline" href="http://www.sucaihuo.com/Index/login/type/sina.html">新浪微博</a>
+            <a class="a_underline" href="http://www.sucaihuo.com/Index/login/type/renren.html">人人网</a>
+            绑定送<span class="red">30</span>积分
+        </div>
+    </div>
+</div>
+    <script src="/Public/js/jquery.js" type="text/javascript"></script><script src="/Public/js/common_version4.js" type="text/javascript"></script>
+
+<!--[if !IE]><!-->
+    <script src="/Public/js/other/jquery.chili-2.2.js" type="text/javascript"></script>
+    <script src="/Public/js/other/recipes.js" type="text/javascript"></script>
+    <!--<![endif]--><div class="mmsg-box mmsg-box-info" id='msg-box' style="margin-top: -23.5px; margin-left: -96.5px;">
+    <div class="mmsg-content">
+        <i class="mmsg-icon"></i>
+        <p id='msg-box-content'></p>
+    </div>
+    <div class="mmsg-background"></div>
+</div>
+<div id="windown_box2"></div>
+<script  type="text/javascript">
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?b5ae3f71dfe5f06a9dd4dc55087f27d1";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s)
+            })();
+    </script>
+</body>
+</html>
