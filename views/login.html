@@ -1,117 +1,50 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+{{include './comms/title_header_4'}}
+    <body> 
+        {{include './comms/all_header'}} {{include './comms/paoma'}}
+<link rel="stylesheet" href="http://www.sucaihuo.com/other/login/css/base.css" />
 
-{{include './comms/title_header'}}
-
-<body>
-    {{include './comms/site_nav'}} {{include './comms/header'}} {{include './comms/nav'}}
-    <link rel="stylesheet" href="http://www.aoxing.me.com/other/login/css/base.css" />
-
-    <div class="wrap">
-        <div class="pop-title clearfix">
-            <a class="a_underline" href="/reg">注册</a>
-            <div class="pop_name">
-                登录<span class="grey">与网友进行讨论及互动；收藏您喜欢的文章和内容；积累积分下载原创模板、精品源码、(兑换礼品正在开发中...)；分享代码、解决求助赢取金币。</span>
-            </div>
+<div class="wrap">
+    <div class="pop-title clearfix">
+        <a class="a_underline" href="http://www.sucaihuo.com/reg.html">注册</a>   
+        <div class="pop_name">
+            登录<span class="grey">与网友进行讨论及互动；收藏您喜欢的文章和内容；积累积分下载原创模板、精品源码、(兑换礼品正在开发中...)；分享代码、解决求助赢取金币。</span>
         </div>
-        <form onsubmit="return false">
-            <div class="pop-content accountPage">
-                <div class="form_item">
-                    <div class="item_tip">用户名</div>
-                    <input type="text" tabindex="1" value="" name="username" data-type="username" data-minlength="5" class="form_input" id="username"
-                        onfocus="focusInputLoginArea($(this))" onblur="blurInputLoginArea($(this))" autocomplete="off">
-                    <span class="error" style="display: inline;">不能为空</span>
-                    <i class="icon-loginright" style="display: none;"></i>
-                    <span class="grey" style="display: none;">允许用中英文、数字、下划线，提交后不可修改</span>
-                </div>
-                <div class="form_item">
-                    <div class="item_tip">密码</div>
-                    <input type="password" tabindex="3" name="pwd" id="pwd" data-minlength="6" data-maxlength="20" class="form_input" onfocus="focusInputLoginArea($(this))"
-                        onblur="blurInputLoginArea($(this))" autocomplete="off">
-                    <span class="error" style="display: inline;">不能为空</span>
-                    <span class="grey" style="display: none;">6 - 20位</span>
-                    <i class="icon-loginright" style="display: none;"></i>
-                </div>
-                <div class="twoWeeks">
-                    <input type="checkbox" class="ckeckBox" name="rememberme" id="rememberme" />
-                    <label for="rememberme">两周内免登录</label>
-                    <a class="a_underline" href="http://www.aoxing.me.com/forget.html">忘记密码？</a>
-                </div>
-                <p class="notice_error" id="notice_error"></p>
-                <input type="submit" tabindex="7" value="登&nbsp;&nbsp;录" class="btn_reg btn common_bgcolor" id="btn_reg" onclick="subLogin($(this))"
-                />
-                <div class="co_login" style="margin:50px 0 0">
-                    联合登录
-                    <a class="a_underline" href="http://www.aoxing.me.com/Index/login/type/qq.html">腾讯QQ</a>
-                    <a class="a_underline" href="http://www.aoxing.me.com/Index/login/type/sina.html">新浪微博</a>
-                    <a class="a_underline" href="http://www.aoxing.me.com/Index/login/type/renren.html">人人网</a> 绑定送
-                    <span class="red">30</span>积分
-                </div>
+
+    </div>
+    <form onsubmit="return false">
+        <div class="pop-content accountPage">
+            <div class="form_item">
+                <div class="item_tip">用户名/邮箱</div>
+                <input type="text" tabindex="1" value="" name="username"  class="form_input" id="username" onblur="blurInputLoginBox($(this))"  onfocus ="focusInputLoginBox($(this))" autocomplete="off"/>
+                <span class="error">不能为空</span>
+                <i class="icon-loginright"></i>
+                <span class="grey">允许用中英文、数字、下划线，提交后不可修改</span>
+            </div>	
+            <div class="form_item">
+                <div class="item_tip">密码</div>
+                <input type="password" tabindex="3" name="pwd" class="form_input" id="pwd" onblur="blurInputLoginBox($(this))"  onfocus ="focusInputLoginBox($(this))" autocomplete="off"/>
+                <span class="error">不能为空</span>
+                <span class="grey">6 - 20位</span>
+                <i class="icon-loginright"></i>
             </div>
-        </form>
-    </div>
-
-
-
-        {{include './comms/footer'}} {{include './comms/windown_box'}}
-    <script src="reg_files/hm.js"></script>
-    <script src="reg_files/jquery.js" type="text/javascript"></script>
-    <script src="reg_files/common.js" type="text/javascript"></script>
-
-    <div class="mmsg-box mmsg-box-info" id="msg-box" style="margin-top: -23.5px; margin-left: -96.5px;">
-        <div class="mmsg-content">
-            <i class="mmsg-icon"></i>
-            <p id="msg-box-content"></p>
+            <div class="twoWeeks">
+                <input type="checkbox" class="ckeckBox" name="rememberme" id="rememberme"/>
+                <label for="rememberme">两周内免登录</label>
+                <!--<a class="a_underline" href="/">忘记密码？</a>-->
+            </div>
+            <p class="notice_error" id="notice_error"></p>
+            <input type="submit" tabindex="7" value="登&nbsp;&nbsp;录" class="btn_reg btn common_bgcolor" id="btn_reg" onclick="subLogin($(this))"/>
+            <!--<div class="co_login" style="margin:50px 0 0">
+                联合登录
+                <a class="a_underline" href="http://www.sucaihuo.com/Index/login/type/qq.html">腾讯QQ</a>
+                <a class="a_underline" href="http://www.sucaihuo.com/Index/login/type/sina.html">新浪微博</a>
+                <a class="a_underline" href="http://www.sucaihuo.com/Index/login/type/renren.html">人人网</a>
+                绑定送<span class="red">30</span>积分
+            </div>-->
         </div>
-        <div class="mmsg-background"></div>
-    </div>
-    <div id="windown_box2"></div>
-
-    <script type="text/javascript">
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "//hm.baidu.com/hm.js?b5ae3f71dfe5f06a9dd4dc55087f27d1";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s)
-        })();
-    </script>
+    </form>
+</div>
 
 
-    
-</body>
 
-</html>
-<script type="text/javascript">
-            function subLogin(obj) {
-                var username = $.trim($('#username').val());
-                var pwd = $.trim($('#pwd').val());
-                if (username == '') {
-                    showLoginError("请输入用户名或邮箱");
-                    return false;
-                }
-                if (pwd == '') {
-                    showLoginError("请输入密码");
-                    return false;
-                }
-
-                obj.addClass('disabled').val('登录中...');
-                $.post('/signin', { username: username, pwd: pwd }, function (data) {
-                    if (data.error != '') {
-                        showLoginError(data.error);
-                    } else {
-
-                        showSuccessTip(data.tip);
-                        var url = "/";
-                        setTimeout("goUrl('" + url + "')", 1000);
-                    }
-                    obj.removeClass('disabled').val('登录');
-                }, "json")
-
-            }
-            function showLoginError(tip) {
-                $("#notice_error").text(tip).show();
-                $("#notice_error").fadeOut(2500);
-            }
-
-</script>
+{{include './comms/main-footer'}}

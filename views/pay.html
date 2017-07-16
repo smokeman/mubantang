@@ -1,54 +1,55 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head> 
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-        <title>在线充值</title>
-        <meta name="keywords" content="" /> 
-        <meta name="description" content="" /> 
-        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" /> 
-        <link rel="stylesheet" href="/css/style_version4.css" type="text/css" /> 
-                    </head> 
-    <body> 
-        {{include './comms/all_header'}}
 
-<link href="/css/member.css" rel="stylesheet" type="text/css" />
-<div  class="container w clearfix">
-    <div class="member_right">
-    <div class="member_per">
-        <div class="panel clearfix">
-            <div class="panel-info clearfix">
-                <a href="http://www.aoxing.me.com/Member/avatar.html"><img class="round-image" width="50" height="50" src="http://www.aoxing.me.com/Public/images/avatar.jpg" alt="头像"></a>
-                <div class="name-job">
-                    <h4 class="myname"> <a href="http://www.aoxing.me.com/Member/info.html">99762276</a></h4>
-                    <p class="job-title"> 工作保密 </p>
-                </div>
-            </div>
-            
-            <div class="sign-wrap">
-                <textarea id="signed_textarea" class="signed_textarea"  disabled autocomplete="off">这位童鞋很懒，什么也没有留下～～！</textarea>
-                <em id="signed_edit" class="signed_edit"></em>
-            </div>
-            <p id="signed_error" class="signed_error"></p>
-            <div class="rank-points">
-                <ul class="clearfix">
-                    <li class="mp-item">
-                        <a class="mp-atag" href="http://www.aoxing.me.com/Member/points.html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>在线充值</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style_version4.css" type="text/css" />
+</head>
+
+<body>
+    {{include './comms/all_header'}}
+
+    <link href="/css/member.css" rel="stylesheet" type="text/css" />
+    <div class="container w clearfix">
+        <div class="member_right">
+            <div class="member_per">
+                <div class="panel clearfix">
+                    <div class="panel-info clearfix">
+                        <!--<a href="http://www.aoxing.me.com/Member/avatar.html"><img class="round-image" width="50" height="50" src="http://www.aoxing.me.com/Public/images/avatar.jpg" alt="头像"></a>-->
+                        <div class="name-job">
+                            <h4 class="myname"> <a href="http://www.aoxing.me.com/Member/info.html">{{account}}</a></h4>
+                            <p class="job-title"> 工作保密 </p>
+                        </div>
+                    </div>
+
+                    <div class="sign-wrap">
+                        <textarea id="signed_textarea" class="signed_textarea" disabled autocomplete="off">这位童鞋很懒，什么也没有留下～～！</textarea>
+                        <em id="signed_edit" class="signed_edit"></em>
+                    </div>
+                    <p id="signed_error" class="signed_error"></p>
+                    <div class="rank-points">
+                        <ul class="clearfix">
+                            <li class="mp-item">
+                                <a class="mp-atag" href="http://www.aoxing.me.com/Member/points.html">
                             <span class="mp-title">积分</span>
-                            <span class="mp-num">50.0</span>
+                            <span class="mp-num">0</span>
                         </a>
-                    </li>
-                    <li class="mp-item">
+                            </li>
+                            <!--<li class="mp-item">
                         <a class="mp-atag" href="http://www.aoxing.me.com/Member/points.html">
                             <span class="mp-title">火币</span>
                             <span class="mp-num">0.0</span>
                         </a>
-                    </li>
-                </ul>
-                             </div>
-        </div>
-    </div>
-    <div class="member_per">
+                    </li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="member_per">
         <ul class="nav panel">
             <li>
                 <a href="http://www.aoxing.me.com/Member/info.html" ><i class="icon-nav icon-tick"></i>我的主页</a>
@@ -86,35 +87,35 @@
                 <a href="http://www.aoxing.me.com/Member/set.html" ><i class="icon-nav icon-note"></i>我的设置</a>
             </li>
         </ul>
-    </div>
-    <div class="member_per">
-        <ul class="space-data panel">
-            <li>
+    </div>-->
+            <div class="member_per">
+                <ul class="space-data panel">
+                    <!--<li>
                 <span class="icon-clock icon" title="下载"></span>
                 下载：
                 <a href="http://www.aoxing.me.com/Member/downloads.html">1次</a>
-            </li>
-            <li>
+            </li>-->
+                    <!--<li>
                 <span class="icon-tick icon" title="收藏"></span>
                 收藏：
                 <a  href="http://www.aoxing.me.com/Member/collects.html">0条</a>
-            </li>
-            <li>
+            </li>-->
+                    <!--<li>
                 <span class="icon-note icon" title="签到"></span>
                 签到：
                 <a class="countNote" href="http://www.aoxing.me.com/Member/sign.html">0次</a>
-            </li>
-<!--            <li>
+            </li>-->
+                    <!--            <li>
                 <span class="icon-ques icon" title="发表"></span>
                 话题：
                 <a href="">0条</a>
             </li>-->
-<!--            <li>
+                    <!--            <li>
                 <span class="icon-chat icon" title="回答"></span>
                 回答：
                 <a href="">0条</a>
             </li>-->
-            <li>
+                    <!--<li>
                 <span class="icon-code icon" title="代码"></span>
                 代码：
                 <a href="">0条</a>
@@ -123,65 +124,76 @@
                 <span class="icon-user icon" title="粉丝"></span>
                 粉丝：
                 <a href="">0个</a>
-            </li>
-        </ul>
-    </div>
-</div>
-    <div class="member_main">
-        <div class="perInfo">
-            <div class="titleInfoBorder">
-                <span>在线充值</span>
-                <a class="want" href="http://www.aoxing.me.com/Member/order.html">充值记录</a>
+            </li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="member_main">
+            <div class="perInfo">
+                <div class="titleInfoBorder">
+                    <span>在线充值</span>
+                    <a class="want" href="http://www.aoxing.me.com/Member/order.html">充值记录</a>
+                </div>
+
             </div>
 
-        </div>
-
-        <div class="tishi">
-            <p class="tishi_text">
-                <span class="tishi_span">优惠活动</span>
-            </p>
-            <p class="tishi_text">
-                冲<b>200</b>元以上送<b>双倍</b>积分，并立即赠送一次免费扒模板机会。
-            </p>
-            <p class="tishi_text">
-                购买<b>300</b>元永久VIP赠送<b>2</b>次免费扒模板机会，当前免费扒模板 <a style="font-size:14px;color:#ff0000;text-decoration:underline;" href='http://www.aoxing.me.com/help/template' target="_blank">0</a> 次数
-            </p>
-            <p class="tishi_text">
-                充值若失败请联系管理员QQ<b>416148489</b>,立即送您<b>双倍</b>积分（PS：目前充值成功率100%）
-            </p>
-        </div>
-        <form action="/paydetail" method="post" id="form_pay">
-            <div class="setting-right-wrap wrap-boxes settings" style="min-height:0">
-                <p class="red"><strong style="font-size:20px">积分充值</strong><span style="color:#666;margin-left:10px">(1元 = <b>10</b> 积分)</span></p>
-                <div class="setting-wrap setting-profile">
-                    <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="1" autocomplete="off"  type="radio"> 10元<b>/</b>110积分</label><label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="5" autocomplete="off"  type="radio"> 100元<b>/</b>1500积分</label><label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="2" autocomplete="off"  type="radio"> 20元<b>/</b>230积分</label><label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="3" autocomplete="off"  type="radio"> 30元<b>/</b>400积分</label><label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="4" autocomplete="off"  type="radio"> 50元<b>/</b>700积分</label><label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="6" autocomplete="off"  type="radio"> 200元<b>/</b>4000积分</label><label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="7" autocomplete="off"  type="radio"> 500元<b>/</b>15000积分</label>                    <label style="width:150px;display: inline-block"><input  name="points_item" value="custom" autocomplete="off"  type="radio"/> 自定义</label>
-                    <div class="wlfg-wrap" id="points_custom_area" style="display: none">
-                        <label class="label">充值金额</label>
-                        <input type="text" name="money" id="money" value="200" style="width:150px" onkeyup="checkMoney($(this), 1)" style="display:none" class="form_input" autocomplete="off"/> 元
-                        <input type="hidden" name="paytype" value="alipay" checked /> 
-                        <span style="color:red;margin:0 0 0 5px" id="points"></span> <span class="unit_name">积分</span>
+            <div class="tishi">
+                <p class="tishi_text">
+                    <span class="tishi_span">优惠活动</span>
+                </p>
+                <p class="tishi_text">
+                    冲<b>200</b>元以上送<b>双倍</b>积分，并立即赠送一次免费扒模板机会。
+                </p>
+                <p class="tishi_text">
+                    购买<b>300</b>元永久VIP赠送<b>2</b>次免费扒模板机会，当前免费扒模板 <a style="font-size:14px;color:#ff0000;text-decoration:underline;"
+                        href='http://www.aoxing.me.com/help/template' target="_blank">0</a> 次数
+                </p>
+                <p class="tishi_text">
+                    充值若失败请联系管理员QQ<b>99762276</b>,立即送您<b>双倍</b>积分（PS：目前充值成功率100%）
+                </p>
+            </div>
+            <form action="/paydetail" method="post" id="form_pay">
+                <div class="setting-right-wrap wrap-boxes settings" style="min-height:0">
+                    <p class="red"><strong style="font-size:20px">充值</strong><span style="color:#666;margin-left:10px">(1元 = <b>10</b> 积分)</span></p>
+                    <div class="setting-wrap setting-profile">
+                        <!--<label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="1" autocomplete="off"  type="radio"> 10元<b>/</b>110积分</label>-->
+                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="2" autocomplete="off" type="radio"> 20元<b>/</b>230积分</label>
+                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="3" autocomplete="off" type="radio"> 30元<b>/</b>400积分</label>
+                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="4" autocomplete="off" type="radio"> 50元<b>/</b>700积分</label>
+                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="5" autocomplete="off" type="radio"> 100元<b>/</b>1500积分</label>
+                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="6" autocomplete="off"  type="radio">200元<b>/</b>4000积分</label>
+                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="7" autocomplete="off" type="radio"> 500元<b>/</b>15000积分</label>
+                        <label style="width:150px;display: inline-block">
+                        <!--<input  name="points_item" value="custom" autocomplete="off"  type="radio"/> 自定义</label>-->
+                        <div class="wlfg-wrap" id="points_custom_area" style="display: none">
+                            <label class="label">充值金额</label>
+                            <input type="text" name="money" id="money" value="200" style="width:150px" onkeyup="checkMoney($(this), 1)" style="display:none"
+                                class="form_input" autocomplete="off" />                                                元
+                            <input type="hidden" name="paytype" value="alipay" checked />
+                            <span style="color:red;margin:0 0 0 5px" id="points"></span> <span class="unit_name">积分</span>
+                        </div>
                     </div>
-                </div>
-                <div class="setting-wrap setting-profile">
-                    <div class="message_item" style="margin-left:65px;">
-                        <em class="type">支付方式：</em>
-                        <!--<label>
+                    <div class="setting-wrap setting-profile">
+                        <div class="message_item" style="margin-left:65px;">
+                            <em class="type">支付方式：</em>
+                            <!--<label>
                             <input type="radio" class="message_rd" value="1" id="rd1" name="rd1" checked="checked" />
                             <span class="message_lab"><img src="/Public/images/alipay.png" width="30px" height="30px"></span>
                         </label>-->
-                        <label>
+                            <label>
                             <input type="radio" class="message_rd" value="0" id="rd2" name="rd1"  />
                             <span class="message_lab"><img src="/images/wechat.png" width="30px" height="30px"></span>
                         </label>
-                    </div>
-                    <div class="wlfg-wrap" style="margin-top:30px">
-                        <label class="label"></label>
-                        <button class="btn" style="height: 36px;line-height: 36px;font-size:16px;width:140px" type="button" onclick="subPayForm()" id='btn_submit'>充值积分</button>
+                        </div>
+                        <div class="wlfg-wrap" style="margin-top:30px">
+                            <label class="label"></label>
+                            <button class="btn" style="height: 36px;line-height: 36px;font-size:16px;width:140px" type="button" onclick="subPayForm()"
+                                id='btn_submit'>充值</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </form>
-        <!--<form action="http://www.aoxing.me.com/Public/pay_month.html" method="post" id="form_pay2">
+            </form>
+            <!--<form action="http://www.aoxing.me.com/Public/pay_month.html" method="post" id="form_pay2">
             <div class="setting-right-wrap wrap-boxes settings">
 
                 <p class="red"><strong style="font-size:20px">开通vip</strong><span style="color:#666;margin-left:10px">(免积分下载)</span> <a href="http://www.aoxing.me.com/topic/187.html" target="_blank">充值说明</a></p>
@@ -243,8 +255,8 @@
                 </div>
             </div>
         </form>-->
-        <div class="pager"></div>
-        <!--<div class="myspace-list">
+            <div class="pager"></div>
+            <!--<div class="myspace-list">
     <a class="myspace-plan " href="http://www.aoxing.me.com/Member/info.html">
         <span>主页</span>
     </a>
@@ -263,93 +275,94 @@
         <span>代码</span>
     </a>
 </div>-->
+        </div>
     </div>
-</div>
 
-{{include './comms/footer'}}
-<script src="reg_files/jquery.js" type="text/javascript"></script>
-<script src="/js/other/jquery_highlight.js" type="text/javascript"></script>
-<script src="/js/member.js" type="text/javascript"></script>
-<div class="mmsg-box mmsg-box-info" id='msg-box' style="margin-top: -23.5px; margin-left: -96.5px;">
-    <div class="mmsg-content">
-        <i class="mmsg-icon"></i>
-        <p id='msg-box-content'></p>
+    {{include './comms/footer'}}
+    <script src="reg_files/jquery.js" type="text/javascript"></script>
+    <script src="/js/other/jquery_highlight.js" type="text/javascript"></script>
+    <script src="/js/member.js" type="text/javascript"></script>
+    <div class="mmsg-box mmsg-box-info" id='msg-box' style="margin-top: -23.5px; margin-left: -96.5px;">
+        <div class="mmsg-content">
+            <i class="mmsg-icon"></i>
+            <p id='msg-box-content'></p>
+        </div>
+        <div class="mmsg-background"></div>
     </div>
-    <div class="mmsg-background"></div>
-</div>
-<script>
-    var bei = parseInt("10");
+    <script>
+        var bei = parseInt("10");
 
-    function checkMoney() {
-        var money = $("#money").val();
-        if (isNaN(money) == true || parseInt(money) < 1) {
-            $("#money").val(10);
+        function checkMoney() {
+            var money = $("#money").val();
+            if (isNaN(money) == true || parseInt(money) < 1) {
+                $("#money").val(10);
+            }
+            var money = getPoints(parseInt($("#money").val()));
+
+            $("#points").text(money * bei);
         }
-        var money = getPoints(parseInt($("#money").val()));
-
-        $("#points").text(money * bei);
-    }
-    function subPayForm() {
-        var money = $("#money").val();
-        if (money >= 1) {
-            var rd = $('input[name=rd1]:checked').val();
-            if (rd == 1) {
+        function subPayForm() {
+            var money = $("#money").val();
+            if (money >= 1) {
+                var rd = $('input[name=rd1]:checked').val();
+                if (rd == 1) {
+                    $("#form_pay").submit();
+                } else {
+                    $('#form_pay').attr('action', '/paydetail');
+                }
                 $("#form_pay").submit();
             } else {
-                $('#form_pay').attr('action', '/paydetail');
+                alert("最低充值金额1元！");
+                return false;
             }
-            $("#form_pay").submit();
-        } else {
-            alert("最低充值金额1元！");
-            return false;
         }
-    }
 
-    $(function() {
-        var money = checkMoney();
-        $("#points").text(money);
-        $("input[name=points_item]").click(function() {
-            var val = $(this).val();
-            if (val == 'custom') {
-                $("#points_custom_area").show();
-            } else {
-                $("#points_custom_area").hide();
-            }
+        $(function () {
+            var money = checkMoney();
+            $("#points").text(money);
+            $("input[name=points_item]").click(function () {
+                var val = $(this).val();
+                if (val == 'custom') {
+                    $("#points_custom_area").show();
+                } else {
+                    $("#points_custom_area").hide();
+                }
+            })
         })
-    })
-    function getPoints(money) {
-        if (money >= 200) {
-            money = money * 2;
+        function getPoints(money) {
+            if (money >= 200) {
+                money = money * 2;
+            }
+            return money;
         }
-        return money;
-    }
-    function getMoney(money) {
+        function getMoney(money) {
 
-        if (money >= 100 && money < 200) {
-            money = money + 10;
-        } else if (money >= 200) {
-            money = money + 30;
+            if (money >= 100 && money < 200) {
+                money = money + 10;
+            } else if (money >= 200) {
+                money = money + 30;
+            }
+            return money;
         }
-        return money;
-    }
-    function subPayForm2() {
+        function subPayForm2() {
 
-        var rd = $('input[name=rd2]:checked').val();
-        if (rd == 1) {
+            var rd = $('input[name=rd2]:checked').val();
+            if (rd == 1) {
+                $("#form_pay2").submit();
+            } else {
+                $('#form_pay2').attr('action', 'http://www.aoxing.me.com/Public/wxpay');
+            }
             $("#form_pay2").submit();
-        } else {
-            $('#form_pay2').attr('action', 'http://www.aoxing.me.com/Public/wxpay');
         }
-        $("#form_pay2").submit();
-    }
-    function subPayForm3() {
+        function subPayForm3() {
 
-        var rd = $('input[name=rd3]:checked').val();
-        if (rd == 1) {
+            var rd = $('input[name=rd3]:checked').val();
+            if (rd == 1) {
+                $("#form_pay3").submit();
+            } else {
+                $('#form_pay3').attr('action', 'http://www.aoxing.me.com/Public/wxpay_huobi');
+            }
             $("#form_pay3").submit();
-        } else {
-            $('#form_pay3').attr('action', 'http://www.aoxing.me.com/Public/wxpay_huobi');
         }
-        $("#form_pay3").submit();
-    }
-</script>
+
+    </script>
