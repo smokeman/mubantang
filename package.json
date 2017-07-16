@@ -1,0 +1,26 @@
+{
+  "name": "mubantang",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "art-template": "^4.12.1",
+    "body-parser": "~1.17.1",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "express-art-template": "^1.0.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.8.1",
+    "mysql": "^2.13.0",
+    "serve-favicon": "~2.4.2",
+    "tenpay": "^1.1.1",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

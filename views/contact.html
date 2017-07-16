@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+	<script src="http//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>hifter - Responsive HTML5 Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="images/favicon.gif"/>
+<link rel="stylesheet" href="css/style.css" media="screen"/><!-- MAIN STYLE CSS FILE -->
+<link rel="stylesheet" href="css/responsive.css" media="screen"/><!-- RESPONSIVE CSS FILE -->
+<link rel="stylesheet" id="style-color" href="css/colors/blue-color.css" media="screen"/><!-- DEFAULT BLUE COLOR CSS FILE -->
+<link href='http//fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'><!-- ROBOTO FONT FROM GOOGLE CSS FILE -->
+<link rel="stylesheet" href="css/prettyPhoto.css" media="screen"/><!--PRETTYPHOTO CSS FILE -->
+<link rel="stylesheet" href="css/font-awesome/font-awesome.min.css" media="screen"/><!-- FONT AWESOME ICONS CSS FILE -->
+<link rel="stylesheet" href="css/layer-slider.css" media="screen"/><!-- LAYER SLIDER CSS FILE -->
+<link rel="stylesheet" href="css/flexslider.css" media="screen"/><!-- FLEX SLIDER CSS FILE -->
+<link rel="stylesheet" href="css/revolution-slider.css" media="screen"/><!-- REVOLUTION SLIDER CSS FILE -->
+<!-- All JavaScript Files (FOR FASTER LOADING OF YOUR SITE, REMOVE ALL JS PLUGINS YOU WILL NOT USE)-->
+<script type="text/javascript" src="js/jquery.min.js"></script><!-- JQUERY JS FILE -->
+<script type="text/javascript" src="http//maps.google.com/maps/api/js?sensor=false"></script><!-- GOOGLE MAP SENSOR JS FILE -->
+<script type="text/javascript" src="http//code.jquery.com/ui/1.10.3/jquery-ui.js"></script><!-- JQUERY UI JS FILE -->
+<script type="text/javascript" src="js/flex-slider.min.js"></script><!-- FLEX SLIDER JS FILE -->
+<script type="text/javascript" src="js/navigation.min.js"></script><!-- MAIN NAVIGATION JS FILE -->
+<script type="text/javascript" src="js/jquery.layerslider.js"></script><!-- LAYER SLIDER JS FILE -->
+<script type="text/javascript" src="js/layerslider.transitions.js"></script><!-- LAYER SLIDER TRANSITIONS JS FILE -->
+<script type="text/javascript" src="js/map.min.js"></script><!-- GOOGLE MAP JS FILE -->
+<script type="text/javascript" src="js/carousel.js"></script><!-- CAROUSEL SLIDER JS -->
+<script type="text/javascript" src="js/jquery.theme.plugins.min.js"></script><!-- REVOLUTION SLIDER PLUGINS JS FILE -->
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script><!-- REVOLUTION SLIDER JS FILE -->
+<script type="text/javascript" src="js/flickr.js"></script><!-- FLICKR WIDGET JS FILE -->
+<script type="text/javascript" src="js/instagram.js"></script><!-- INSTAGRAM WIDGET JS FILE -->
+<script type="text/javascript" src="js/jquery.twitter.js"></script><!--TWITTER WIDGET JS FILE -->
+<script type="text/javascript" src="js/prettyPhoto.min.js"></script><!-- PRETTYPHOTO JS FILE -->
+<script type="text/javascript" src="js/jquery.tooltips.min.js"></script><!-- TOOLTIPS JS FILE -->
+<script type="text/javascript" src="js/isotope.min.js"></script><!--ISOTOPE JS FILE -->
+<script type="text/javascript" src="js/scrolltopcontrol.js"></script><!-- SCROLL TO TOP JS PLUGIN -->
+<script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script><!-- EASY PIE JS FILE -->
+<script type="text/javascript" src="js/jquery.transit.min.js"></script><!-- TRANSITION JS FILE -->
+<script type="text/javascript" src="js/custom.js"></script><!-- CUSTOM JAVASCRIPT JS FILE -->
+<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="container">
+	<!-- main container starts-->
+	<div id="wrapp">
+		<!-- main wrapp starts-->
+		<header id="header">
+		<!--header starts -->
+		{{include './comm/header'}}
+
+		{{include './comm/logo'}}
+
+		{{include './comm/nav'}}
+
+		{{include './comm/layer'}}
+		<!-- header ends-->
+		<div id="content">
+		
+			<div id="google-map" style="height:50px;">
+			</div>
+			<div class="container">
+				<section class="three-fourth">
+				<form action="#" id="contact-form" class="simple-form " method="post">
+					<div id="error-field">
+					</div>
+					<fieldset>
+						<i class="icon-user tooltip left" title="您的姓名"></i><input value="姓名" title="姓名" onblur="if(this.value=='')this.value='姓名';" onfocus="if(this.value=='姓名')this.value='';" type="text" class="text requiredField" name="name"/>
+					</fieldset>
+					<fieldset>
+						<i class="icon-envelope tooltip left" title="邮箱"></i><input type="text" title="Email" value="Email" onblur="if(this.value=='')this.value='Email';" onfocus="if(this.value=='Email')this.value='';" class="email requiredField" name="email"/>
+					</fieldset>
+					<fieldset>
+						<i class="icon-globe tooltip left" title="网站"></i><input type="text" title="网站" value="网站" onblur="if(this.value=='')this.value='网站';" onfocus="if(this.value=='网站')this.value='';" class="text" name="url"/>
+					</fieldset>
+					<fieldset>
+						<div class="input-title">
+							您的消息:
+						</div>
+						<textarea cols="30" rows="12" title="内容" class="text requiredField" name="message"></textarea>
+					</fieldset>
+					<div class="three-fourth">
+						<input type="button" value="发送" onclick="javascript:alert('发送成功')" class="button big grey round"/>
+					</div>
+				</form>
+				</section>
+				<section class="one-fourth sidebar right">
+				<div class="widget">
+					<h4 class="widget-title">联系信息</h4>
+					<ul class="simple-list">
+						<li><a href="#">淮安市敖兴网络</a></li>
+						<li><a href="#">0517-86232046</a></li>
+						<li><a href="#">602940084@qq.com</a></li>
+						<li><a href="#">淮安市清河区曦园街67号（清城创意谷）12号楼215室</a></li>
+					</ul>
+					<!--<div class="pdf">
+						<a href="#">Download our <br/> Services Brochure</a>
+					</div>-->
+				</div>
+				</section>
+			</div>
+		</div>
+		{{include './comm/foot'}}
+	</div>
+	<!-- main wrapp starts-->
+</div>
+<!-- main container ends-->
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<div id="site_nav" class="site_nav">
+    <div class="sn_container w clearfix">
+        <ul class="tg_tools fr">
+            <li class="no-hover">
+                <!--<a href="/pay" rel="nofollow" class="head_pay_btn common_color" style="color:#5188a6">充值积分</a>
+                <a href="/Member/pay.html#form_pay3" rel="nofollow" class="head_pay_btn common_color" style="color:#5188a6">充值火币</a>-->
+                <a href="/{{if account}}pay{{/if}}{{if !account || account == ''}}login{{/if}}" rel="nofollow" class="head_pay_btn common_color" style="color:#f60">充值会员</a>
+            </li>
+            <li class="no-hover" style="display: none">
+                <a id="msg_notify" class="msg_notify" rel="nofollow" href="/Member/message.html"></a>
+            </li>
+            <li class="box_color nav_home">
+                <span><a href="/Member/info.html" rel="nofollow">个人中心</a></span><b class="icon"></b>
+                <ul>
+                    <li><a href="/Member/info.html" rel="nofollow"><span>我的主页</span></a></li>
+                    <li><a href="/Member/set.html" rel="nofollow"><span>个人设置</span></a></li>
+                    <li><a href="/Member/downloads.html" rel="nofollow"><span>下载记录</span></a></li>
+                    <!--<li><a href="/Member/collects.html" rel="nofollow"><span>我的收藏</span></a></li>-->
+                    <!--<li><a href="/Member/sign.html" rel="nofollow"><span>我的签到</span></a></li>-->
+                    <!--<li><a href="/Download/logout?r=" rel="nofollow"><span>退出登录</span></a></li>-->
+                </ul>
+            </li>
+            <li class="tg-line icon"></li>
+            <li class="box_color">
+                <span>帮助中心</span><b class="icon"></b>
+                <ul>
+                    <li><a href="/helptemplate"><span>扒模板</span></a></li>
+                    <li><a href="/helppoints"><span>积分获取</span></a></li>
+                    <li><a href="/helpcontact"><span>联系我们</span></a></li>
+                    <li><a href="/helpindex"><span>关于我们</span></a></li>
+                    <li><a href="/helpjob"><span>招纳贤士</span></a></li>
+                </ul>
+            </li>
+            <li class="tg-line icon"></li>
+            <li class="box_color">
+                <!--<span><a href="/uploads/index" class="common_color">上传资源</a></span><b class="icon"></b>-->
+                <ul>
+                    <!--<li><a href="/Member/uploads"><span>我的上传</span></a></li>-->
+                    <!--<li><a href="/uploads/js"><span>上传特效</span></a></li>-->
+                    <!--<li><a href="/uploads/templates"><span>上传模板</span></a></li>-->
+                    <!--<li><a href="/uploads/php"><span>上传PHP</span></a></li>-->
+                    <!--                                                    <li><a href="/uploads/source"><span>上传源码</span></a></li>-->
+                </ul>
+            </li>
+            <li class="tg-line icon"></li>
+            <li class="no-hover">
+                <!--<a class="head_pay_btn common_color" href="/tools" rel="nofollow" style="color:red">工具箱</a>-->
+            </li>
+        </ul>
+        <ul class="tg_tools fl" id="login_area" style="display: block;">
+            <li class="tg_tools_home no-hover"><i class="icon-more"></i><span><a href="./index_files/index.html">素材网首页</a></span></li>
+
+            <!--<li class="no-hover nologin"><span><a href="/Index/login/type/qq.html"><img alt="Connect_logo_6.png" src="./index_files/Connect_logo_6.png" style="position: relative;top:3px;"></a></span></li>-->
+            <!--                                                <li class="no-hover nologin"><span><a href="/login.html" class="sn_login">登录</a></span></li>-->
+            <!--<li class="no-hover hide haslogin"><span><a href="/Member/info.html"><font class="sn_login username common_color" id="head_username"></font></a></span>
+                <i class="icon_vip"></i>
+            </li>-->
+            <li class="tg-line icon"></li>
+            {{if !account || account == ''}}
+            <li class="no-hover nologin"><span><a href="/reg">注册</a></span></li>
+            {{/if}} {{if account}}
+            <li>
+                <span style="color:red">{{account}}</span>
+            </li>
+            <li class="no-hover haslogin">
+                <div onclick="signout()">退出</div>
+
+            </li>
+            {{/if}} {{if !account || account == ''}}
+            <li class="box_color nav_home" id="nav_login">
+                <span><a href="/login" class="sn_login common_color">登录</a></span><b class="icon"></b>
+                <!--<ul>
+                    <li><a href="/Index/login/type/sina.html"><span>新浪微博</span></a></li>
+                    <li><a href="/Index/login/type/renren.html"><span>人人网<i style="visibility: hidden">站</i></span></a></li>
+                </ul>-->
+            </li>
+            {{/if}}
+        </ul>
+    </div>
+</div>

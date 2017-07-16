@@ -1,0 +1,78 @@
+{{include './comms/title_header_4'}}
+
+<body>
+    {{include './comms/all_header'}} {{include './comms/paoma'}}
+
+    <div id="classify" class="tg_classify w_list">
+        <div class="tg_tab_box on">
+            <div class="tg_classify_wrap clearfix">
+                <dl class="tg_classify_all tg_classify_flat dl_left">
+                    <dt class="">
+                        <i class="icon_order"></i> 源码分类
+                    </dt>
+                </dl>
+                <dl class="tg_classify_all tg_classify_flat clearfix dl_right">
+                    <dd class='on'>
+                        <a href="/source">
+                    <span>不限</span>
+                </a>
+                    </dd>
+                    {{each type as value index}} {{if value.stype == '01'}}
+                    <dd class="" style="">
+                        <a href="/source?id={{value.tcode}}"><span>{{value.tname}}</span></a>
+                    </dd>
+                    {{/if}} {{/each}}
+                </dl>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="container" class="w_list">
+
+        {{include './comms/sort'}}
+        <div class="list">
+            <div class="list_main clearfix">
+                {{each source as value index}}
+                <div class="per">
+                    <a target="_blank" href="/detail?mtype=source&img={{value.img}}" class="img_link" style="height:217px"> 
+                            <img src="/data/整站源码/{{value.img}}.jpg"  style="height:217px" original="/data/整站源码/{{value.img}}.jpg" alt="{{value.title}}" class="lazy"  />
+                        </a>
+                    <div class="foot">
+                        <p class="title"><a target="_blank" href="/detail?mtype=js&img={{value.img}}">{{value.title}}</a> </p>
+                        <div class="statics">
+                            <a class='download citecommon'>下载 <em>{{value.down}}次</em></a>
+
+                            <!--<a class='comment citecommon'>评论 <em>1条</em></a>-->
+                            <a class='scores citecommon'>浏览 <em>{{value.look}}次</em></a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+
+            </div>
+            <div class="pager">共<span class="red"> {{source.length}} </span>个源码 <a class="prev" href="/source">上一页</a>
+                <a class="num" href="/source">1</a>
+                <a class="next" href="/source">下一页</a>
+            </div>
+        </div>
+    </div>
+    {{include './comms/main-footer'}}
+
+
+</body>
+
+</html>
+<script type="text/javascript" src="/Public/js/plugins/blocksit.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).load(function () {
+            $('.list_main').BlocksIt({
+                numOfCol: 4,
+                offsetX: 6,
+                offsetY: 8
+            });
+        });
+    })
+
+</script>

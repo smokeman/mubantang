@@ -1,0 +1,74 @@
+ {{include './comms/title_header_4'}}
+
+<body>
+    {{include './comms/all_header'}} {{include './comms/paoma'}}
+    <div id="classify" class="tg_classify w_list">
+        <div class="tg_tab_box on">
+
+        </div>
+    </div>
+
+    <div id="container" class="w_list">
+
+        <div class="list">
+            <div class="list_main clearfix">
+                {{each search as value index}}
+                <div class="per">
+                    <a target="_blank" href="/detail?mtype=js&img={{value.img}}" class="img_link" style="height:217px"> 
+                            <img src="/data/网页特效/{{value.img}}.jpg"  style="height:217px" original="/data/网页特效/{{value.img}}.jpg" alt="{{value.title}}" class="lazy"  />
+                        </a>
+                    <div class="foot">
+                        <p class="title"><a target="_blank" href="/detail?mtype=js&img={{value.img}}">{{value.title}}</a> </p>
+                        <div class="statics">
+                            <a class='download citecommon'>下载 <em>{{value.down}}次</em></a>
+
+                            <!--<a class='comment citecommon'>评论 <em>1条</em></a>-->
+                            <a class='scores citecommon'>浏览 <em>{{value.look}}次</em></a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+
+        {{if search > 0}}
+        <div class="pager">共<span class="red"> {{search.length}} </span>个jquery特效 <a class="prev" href="/js">上一页</a>
+            <a class="num" href="/search">1</a>
+            <a class="next" href="/search">下一页</a>
+        </div>
+        {{/if}}
+        {{if search == 0}}
+        <div id="container" class="w_list">
+            <div class="list">
+                <div class='no_result'>
+                    <!--<p><img width="96" height="120" src="/images/no_result.png" alt='找不到栈桥相关搜索结果'></p>-->
+                    <!--                <p class="words"><span class="line">找不到“<em>栈桥</em>”的相关搜索结果</span></p>-->
+                    <p class="words"><span class="line">没有找到合适的素材，请换个关键词搜索试试。</span>
+                        </p>
+                </div>
+            </div>
+        </div>
+        {{/if}}
+
+        
+        
+
+    {{include './comms/main-footer'}}
+
+</body>
+
+</html>
+<script type="text/javascript" src="/Public/js/plugins/blocksit.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).load(function () {
+            $('.list_main').BlocksIt({
+                numOfCol: 4,
+                offsetX: 6,
+                offsetY: 8
+            });
+        });
+    })
+
+</script>

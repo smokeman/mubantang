@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+	<script src="http//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>敖兴科技 - HTML5响应式模板</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="images/favicon.gif"/>
+<link rel="stylesheet" href="css/style.css" media="screen"/><!-- MAIN STYLE CSS FILE -->
+<link rel="stylesheet" href="css/responsive.css" media="screen"/><!-- RESPONSIVE CSS FILE -->
+<link rel="stylesheet" id="style-color" href="css/colors/blue-color.css" media="screen"/><!-- DEFAULT BLUE COLOR CSS FILE -->
+<link href='http//fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'> ROBOTO FONT FROM GOOGLE CSS FILE 
+<link rel="stylesheet" href="css/prettyPhoto.css" media="screen"/><!--PRETTYPHOTO CSS FILE -->
+<link rel="stylesheet" href="css/font-awesome/font-awesome.min.css" media="screen"/><!-- FONT AWESOME ICONS CSS FILE -->
+<link rel="stylesheet" href="css/layer-slider.css" media="screen"/><!-- LAYER SLIDER CSS FILE -->
+<link rel="stylesheet" href="css/flexslider.css" media="screen"/><!-- FLEX SLIDER CSS FILE -->
+<link rel="stylesheet" href="css/revolution-slider.css" media="screen"/><!-- REVOLUTION SLIDER CSS FILE -->
+
+<!-- All JavaScript Files (FOR FASTER LOADING OF YOUR SITE, REMOVE ALL JS PLUGINS YOU WILL NOT USE)-->
+<script type="text/javascript" src="js/jquery.min.js"></script><!-- JQUERY JS FILE -->
+<script type="text/javascript" src="http//code.jquery.com/ui/1.10.3/jquery-ui.js"></script><!-- JQUERY UI JS FILE -->
+<script type="text/javascript" src="js/flex-slider.min.js"></script><!-- FLEX SLIDER JS FILE -->
+<script type="text/javascript" src="js/navigation.min.js"></script><!-- MAIN NAVIGATION JS FILE -->
+<script type="text/javascript" src="js/jquery.layerslider.js"></script><!-- LAYER SLIDER JS FILE -->
+<script type="text/javascript" src="js/layerslider.transitions.js"></script><!-- LAYER SLIDER TRANSITIONS JS FILE -->
+<script type="text/javascript" src="js/map.min.js"></script><!-- GOOGLE MAP JS FILE -->
+<script type="text/javascript" src="js/carousel.js"></script><!-- CAROUSEL SLIDER JS -->
+<script type="text/javascript" src="js/jquery.theme.plugins.min.js"></script><!-- REVOLUTION SLIDER PLUGINS JS FILE -->
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script><!-- REVOLUTION SLIDER JS FILE -->
+<script type="text/javascript" src="js/flickr.js"></script><!-- FLICKR WIDGET JS FILE -->
+<script type="text/javascript" src="js/instagram.js"></script><!-- INSTAGRAM WIDGET JS FILE -->
+<script type="text/javascript" src="js/jquery.twitter.js"></script><!--TWITTER WIDGET JS FILE -->
+<script type="text/javascript" src="js/prettyPhoto.min.js"></script><!-- PRETTYPHOTO JS FILE -->
+<script type="text/javascript" src="js/jquery.tooltips.min.js"></script><!-- TOOLTIPS JS FILE -->
+<script type="text/javascript" src="js/isotope.min.js"></script><!--ISOTOPE JS FILE -->
+<script type="text/javascript" src="js/scrolltopcontrol.js"></script><!-- SCROLL TO TOP JS PLUGIN -->
+<script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script><!-- EASY PIE JS FILE -->
+<script type="text/javascript" src="js/jquery.transit.min.js"></script><!-- TRANSITION JS FILE -->
+<script type="text/javascript" src="js/custom.js"></script><!-- CUSTOM JAVASCRIPT JS FILE -->
+<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<!--<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+
+</head>
+<body>
+<div id="container">
+	<!-- main container starts-->
+	<div id="wrapp">
+		<!-- main wrapp starts-->
+		<header id="header">
+		<!--header starts -->
+
+		{{include './comm/header'}}
+
+		{{include './comm/logo'}}
+
+		{{include './comm/nav'}}
+
+		{{include './comm/layer'}}
+
+		</header>
+
+
+
+
+
+		<div id="content">
+			<!-- 首页 intro starts -->
+			{{include './comm/intro'}}
+
+			<!--首页 intro ends-->
+			<div class="container">
+				<div class="one-third">
+					<div class="feature-block"><!-- features blocks starts -->
+						<div class="feature-block-title">
+							<div class="feature-block-icon">
+								<i class="icon-lightbulb"></i><span></span>
+							</div>
+							<h4>Simplistic Design</h4>
+							<h6>Mobile &amp; Tablets Ready</h6>
+						</div>
+						<p>
+							 Integer libero lectus, porta acean pulvinar ac, facilisis non arcu. Maecenas enim orci, adipiscing dictum sit amet gusce dapibus.
+						</p>
+					</div>
+				</div>
+				<div class="one-third">
+					<div class="feature-block">
+						<div class="feature-block-title">
+							<div class="feature-block-icon">
+								<i class="icon-desktop"></i><span></span>
+							</div>
+							<h4>Lots of Layout Options</h4>
+							<h6>Fullwidth &amp; Boxed Versions</h6>
+						</div>
+						<p>
+							 Integer libero lectus, porta acean pulvinar ac, facilisis non arcu. Maecenas enim orci, adipiscing dictum sit amet gusce dapibus.
+						</p>
+					</div>
+				</div>
+				<div class="one-third">
+					<div class="feature-block">
+						<div class="feature-block-title">
+							<div class="feature-block-icon">
+								<i class="icon-cog"></i><span></span>
+							</div>
+							<h4>Premium Sliders Included</h4>
+							<h6>Layer &amp; Revolution Slider Included</h6>
+						</div>
+						<p>
+							 Integer libero lectus, porta acean pulvinar ac, facilisis non arcu. Maecenas enim orci, adipiscing dictum sit amet gusce dapibus.
+						</p>
+					</div>
+				</div><!--features block ends-->
+			</div>
+			<div class="intro-features"><!-- intro features panel starts -->
+				<div class="container">
+					<h4>Our Latest Projects</h4>
+					<div class="slidewrap">
+						<!--project carousel starts-->
+						<ul class="slider" id="sliderName">
+							<li class="slide"><!-- carousel item starts -->
+							<div class="one-fourth">
+							<div class="item-wrapp">
+								<div class="portfolio-item">
+									<a href="single-project-small.html" class="item-permalink"><i class="icon-link"></i></a>
+									<a href="images/portfolio/portfolio-item-1.jpg" data-rel="prettyPhoto" class="item-preview"><i class="icon-zoom-in"></i></a>
+									<img src="images/portfolio/portfolio-item-1.jpg" alt=""/>
+								</div>
+								<div class="portfolio-item-title">
+									<a href="single-project-small.html">Custom WordPress Theme</a>
+									<p>
+										 Design / Development
+									</p>
+								</div>
+							</div>
+							</div>
+
+							<div class="one-fourth">
+							<div class="item-wrapp">
+								<div class="portfolio-item">
+									<a href="single-project-small.html" class="item-permalink"><i class="icon-link"></i></a>
+									<a href="images/portfolio/portfolio-item-2.jpg" data-rel="prettyPhoto" class="item-preview"><i class="icon-zoom-in"></i></a>
+									<img src="images/portfolio/portfolio-item-2.jpg" alt=""/>
+								</div>
+								<div class="portfolio-item-title">
+									<a href="single-project-small.html">T-Shirt Design</a>
+									<p>
+										 Design / Development
+									</p>
+								</div>
+							</div>
+							</div>
+
+							<div class="one-fourth">
+							<div class="item-wrapp">
+								<div class="flexslider portfolio-items-slider fade">
+									<ul class="slides">
+										<li><img src="images/portfolio/portfolio-item-3.jpg" alt=""/></li>
+										<li><img src="images/portfolio/portfolio-item-4.jpg" alt=""/></li>
+										<li><img src="images/portfolio/portfolio-item-5.jpg" alt=""/></li>
+									</ul>
+								</div>
+								<div class="portfolio-item-title">
+									<a href="single-project-small.html">Video Project</a>
+									<p>
+										 Design / Development
+									</p>
+								</div>
+							</div>
+							</div>
+
+							<div class="one-fourth">
+							<div class="item-wrapp">
+								<div class="portfolio-item">
+									<a href="single-project-small.html" class="item-permalink"><i class="icon-link"></i></a>
+									<a href="images/portfolio/portfolio-item-6.jpg" data-rel="prettyPhoto" class="item-preview"><i class="icon-zoom-in"></i></a>
+									<img src="images/portfolio/portfolio-item-6.jpg" alt=""/>
+								</div>
+								<div class="portfolio-item-title">
+									<a href="single-project-small.html">Custom PHP CMS</a>
+									<p>
+										 Design / Development
+									</p>
+								</div>
+							</div>
+							</div>
+							</li>
+							<li class="slide"><!-- carousel item starts -->
+							<div class="one-fourth">
+							<div class="item-wrapp">
+								<div class="portfolio-item">
+									<a href="single-project-small.html" class="item-permalink"><i class="icon-link"></i></a>
+									<a href="images/portfolio/portfolio-item-7.jpg" data-rel="prettyPhoto" class="item-preview"><i class="icon-zoom-in"></i></a>
+									<img src="images/portfolio/portfolio-item-7.jpg" alt=""/>
+								</div>
+								<div class="portfolio-item-title">
+									<a href="single-project-small.html">Joomla Templates</a>
+									<p>
+										 Design / Development
+									</p>
+								</div>
+							</div>
+							</div>
+
+							<div class="one-fourth">
+							<div class="item-wrapp">
+								<div class="portfolio-item">
+									<a href="single-project-small.html" class="item-permalink"><i class="icon-link"></i></a>
+									<a href="images/portfolio/portfolio-item-8.jpg" data-rel="prettyPhoto" class="item-preview"><i class="icon-zoom-in"></i></a>
+									<img src="images/portfolio/portfolio-item-8.jpg" alt=""/>
+								</div>
+								<div class="portfolio-item-title">
+									<a href="single-project-small.html">Custom WordPress Theme</a>
+									<p>
+										 Design / Development
+									</p>
+								</div>
+							</div>
+							</div>
+
+							<div class="one-fourth">
+							<div class="item-wrapp">
+								<div class="portfolio-item">
+									<a href="single-project-small.html" class="item-permalink"><i class="icon-link"></i></a>
+									<a href="images/portfolio/portfolio-item-9.jpg" data-rel="prettyPhoto" class="item-preview"><i class="icon-zoom-in"></i></a>
+									<img src="images/portfolio/portfolio-item-9.jpg" alt=""/>
+								</div>
+								<div class="portfolio-item-title">
+									<a href="single-project-small.html">Font Design</a>
+									<p>
+										 Design / Development
+									</p>
+								</div>
+							</div>
+							</div>
+
+							<div class="one-fourth">
+							<div class="item-wrapp">
+								<div class="portfolio-item">
+									<a href="single-project-small.html" class="item-permalink"><i class="icon-link"></i></a>
+									<a href="images/portfolio/portfolio-item-10.jpg" data-rel="prettyPhoto" class="item-preview"><i class="icon-zoom-in"></i></a>
+									<img src="images/portfolio/portfolio-item-10.jpg" alt=""/>
+								</div>
+								<div class="portfolio-item-title">
+									<a href="single-project-small.html">Custom Drupal Theme</a>
+									<p>
+										 Design / Development
+									</p>
+								</div>
+							</div>
+							</div>
+							</li>
+						</ul><!-- carousel items UL ends -->
+						<ul class="slidecontrols">
+							<li><a href="#sliderName" class="prev">Prev</a></li>
+							<li><a href="#sliderName" class="next">Next</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div><!-- intro features panel ends -->
+			<!--include client-->
+		</div>
+		{{include './comm/foot'}}
+	</div>
+	<!-- main wrapp starts-->
+</div>
+<!-- main container ends-->
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
