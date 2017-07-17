@@ -187,13 +187,20 @@ router.get('/pay', function (req, res, next) {
 });
 
 router.post('/paydetail', function (req, res, next) {
-  pay.paydo(Math.random().toString(36).substring(3, 8), 1, Math.random().toString(36).substring(3, 8))
-    .then((result) => {
-      res.render('paydetail.html', { value: 1, code_url: result.code_url, account: res.cookie['account'], email: res.cookie['email'] });
-    })
-    .catch((error) => {
-      console.log('errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr')
-    })
+  var postData = '';
+  // console.log(postData.split('&')[0].split['='][1]);
+  req.on('data', chunk => postData += chunk.toString());
+  req.on('end', () => {
+    console.log(postData.split('&')[0].split('=')[1]);
+    pay.paydo(Math.random().toString(36).substring(3, 8), postData.split('&')[0].split('=')[1] * 100, Math.random().toString(36).substring(3, 8))
+      .then((result) => {
+        console.log(postData);
+        res.render('paydetail.html', { value: 1, code_url: result.code_url, account: res.cookie['account'], email: res.cookie['email'] });
+      })
+      .catch((error) => {
+        console.log('errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr')
+      })
+  })
   // pay.paydo('20172321312',1,'23131232112')
   // .then((result)=>{
   //   console.log(result)

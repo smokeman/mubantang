@@ -155,14 +155,15 @@
             <form action="/paydetail" method="post" id="form_pay">
                 <div class="setting-right-wrap wrap-boxes settings" style="min-height:0">
                     <p class="red"><strong style="font-size:20px">充值</strong><span style="color:#666;margin-left:10px">(1元 = <b>10</b> 积分)</span></p>
+                    <input type="text" readonly id="points_m" name="points_m" value="500">
                     <div class="setting-wrap setting-profile">
                         <!--<label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="1" autocomplete="off"  type="radio"> 10元<b>/</b>110积分</label>-->
-                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="2" autocomplete="off" type="radio"> 20元<b>/</b>230积分</label>
-                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="3" autocomplete="off" type="radio"> 30元<b>/</b>400积分</label>
-                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="4" autocomplete="off" type="radio"> 50元<b>/</b>700积分</label>
-                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="5" autocomplete="off" type="radio"> 100元<b>/</b>1500积分</label>
-                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="6" autocomplete="off"  type="radio">200元<b>/</b>4000积分</label>
-                        <label style="width:150px;display: inline-block"><input checked="checked" name="points_item" value="7" autocomplete="off" type="radio"> 500元<b>/</b>15000积分</label>
+                        <label style="width:150px;display: inline-block"><input  onclick="setMoney(this.value)" name="points_item" value="20" autocomplete="off" type="radio"> 20元<b>/</b>230积分</label>
+                        <label style="width:150px;display: inline-block"><input  onclick="setMoney(this.value)" name="points_item" value="30" autocomplete="off" type="radio"> 30元<b>/</b>400积分</label>
+                        <label style="width:150px;display: inline-block"><input  onclick="setMoney(this.value)" name="points_item" value="50" autocomplete="off" type="radio"> 50元<b>/</b>700积分</label>
+                        <label style="width:150px;display: inline-block"><input  onclick="setMoney(this.value)" name="points_item" value="100" autocomplete="off" type="radio"> 100元<b>/</b>1500积分</label>
+                        <label style="width:150px;display: inline-block"><input  onclick="setMoney(this.value)" name="points_item" value="200" autocomplete="off"  type="radio">200元<b>/</b>4000积分</label>
+                        <label style="width:150px;display: inline-block"><input onclick="setMoney(this.value)" checked="checked" name="points_item" value="7" autocomplete="off" type="radio"> 500元<b>/</b>15000积分</label>
                         <label style="width:150px;display: inline-block">
                         <!--<input  name="points_item" value="custom" autocomplete="off"  type="radio"/> 自定义</label>-->
                         <div class="wlfg-wrap" id="points_custom_area" style="display: none">
@@ -290,6 +291,13 @@
         <div class="mmsg-background"></div>
     </div>
     <script>
+
+        function setMoney(m){
+            console.log(m)
+            // var money = m.value;
+            $('#points_m').val(m);
+        }
+
         var bei = parseInt("10");
 
         function checkMoney() {
