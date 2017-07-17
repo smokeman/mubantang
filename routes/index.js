@@ -21,6 +21,11 @@ router.post('/notify', function (req, res, next) {
   req.on('end', () => {
     console.log(postData);
     console.log('notifypostfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff')
+    let return_code = `<xml>
+  <return_code><![CDATA[SUCCESS]]></return_code>
+  <return_msg><![CDATA[OK]]></return_msg>
+</xml>`
+    res.send(return_code)  
   })
 })
 
