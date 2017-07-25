@@ -36,7 +36,7 @@ Detail.get = (mtype,order) => new Promise((resolve, reject) => {
             resolve(results);
         })
         .catch((error) => {
-            console.log('checkpass err');
+            console.log(error);
         })
 })
 
@@ -47,7 +47,7 @@ Detail.getOrder = (mtype,order) => new Promise((resolve, reject) => {
             resolve(results);
         })
         .catch((error) => {
-            console.log('checkpass err');
+            console.log(error);
         })
 })
 
@@ -87,7 +87,7 @@ Detail.getFrom = (mtype, img) => new Promise((resolve, reject) => {
             resolve(results);
         })
         .catch((error) => {
-            console.log('checkpass err');
+            console.log(error);
         })
 })
 
@@ -98,7 +98,7 @@ Detail.getFrom = (mtype, img) => new Promise((resolve, reject) => {
 //             resolve(results);
 //         })
 //         .catch((error) => {
-//             console.log('checkpass err');
+//             console.log(error);
 //         })
 // })
 
