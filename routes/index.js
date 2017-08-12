@@ -35,7 +35,7 @@ router.validateToken = (req,res)=>{
   oriArray[1] = timestamp;
   oriArray[2] = "aoxing";//这里是你在微信开发者中心页面里填的token，而不是****
   oriArray.sort();
-  var original = oriArray.join('');
+  var original = oriArray.join('Qlmw56iEU0HFfbAMOMEvwyOfyof4h76sT9ZTwOQSrDy');
   console.log("Original str : " + original);
   console.log("Signature : " + signature );
   var scyptoString = sha1(original);
