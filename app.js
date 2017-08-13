@@ -22,7 +22,7 @@ app.set('view options', {
 // ============================================
 
 const index = require('./routes/index');
-const wechat = require('/routers/wechat');
+const wechat = require('./routes/wechat');
 app.use('/', index);
 app.use('/wechat', wechat);
 

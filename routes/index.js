@@ -74,7 +74,7 @@ router.get('/order', function (req, res, next) {
 
 })
 
-router.get('/', function (req, res, next) {
+router.get('/临时关闭', function (req, res, next) {
   const getPromises =
     ['网站模板', '网页特效', 'PHP', '视频教程', '酷站欣赏', '整站源码'].map(par => detail.get(par));
 
