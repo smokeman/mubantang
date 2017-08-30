@@ -1,0 +1,258 @@
+{{include './comms/title_header_4'}}
+
+<body>
+    {{include './comms/all_header'}}
+    <div class="container w clearfix">
+        <div class="index_left clearfix">
+            <div class="banner" id="banner">
+                <ul id="index_banner">
+                    <li>
+                        <a target="_blank" href="/detail?mtype=js&img=3">
+                            <img alt="一款jQuery CSS3多种酷炫文字动画插件" src="/data/网页特效/3.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/detail?mtype=site&img=3">
+                            <img alt="网站模板" src="/data/网站模板/3.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/detail?mtype=source&img=37">
+                            <img alt="网站源码" src="/data/网站源码/37.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/php/1948.html">
+                            <img alt="PHP原生支付宝pc+wap在线支付演示源码" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/21.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/source/267.html">
+                            <img alt="Thinkphp仿phpwind论坛系统" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/22.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/php/1854.html">
+                            <img alt="PHP九宫格手机端抽奖游戏" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/23.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/templates/462.html">
+                            <img alt="三级分销微信商城模板" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/16.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/templates/444.html">
+                            <img alt="精仿苏宁电器商城网站模板" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/15.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/js/830.html">
+                            <img alt="PHP仿微信多图片预览上传 " src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/12.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/php/1188.html">
+                            <img alt="微信JSAPI支付成功后获取回调数据" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/19.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/js/816.html">
+                            <img alt="素材网PHP评论系统" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/11.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/templates/435.html">
+                            <img alt="一号店网上商城模板" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/13.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/php/1074.html">
+                            <img alt="PHP微信浏览器支付宝在线支付" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/18.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/templates/390">
+                            <img alt="knewone2016最新分享购物网站模板" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/3.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/php/524.html">
+                            <img alt="Thinkphp各大支付平台在线支付" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/5.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/templates/354">
+                            <img alt="三九手机网手机响应式模版" src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/6.jpg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/js/512">
+                            <img alt="PHP素材网签到演示与下载 " src="http://aoxing.me.oss-cn-hangzhou.aliyuncs.com/ads/7.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="banner_page" id="banner_page"></div>
+                <a class="banner_page_btn banner_page_left" id="banner_page_left"></a>
+                <a class="banner_page_btn banner_page_right" id="banner_page_right"></a>
+            </div>
+            <div class="index_recommend">
+                <div class="head clearfix">
+                    <a class="more" href="/templates" target="_blank">更多&nbsp;<span class="more-sign">></span></a>
+                    <ul class="clearfix index-coupon-menus">
+                        <li class="current index-coupon-menus-first">
+                            网站模板
+                            <span class="arrow-up-menu arrow"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content clearfix">
+                    <div class="per current">
+                        <ul class="ul_pics">
+                             {{each template as value index}}
+                                {{if value.img < 7}}
+                                    <li>
+                                        <a target="_blank" href="/detail?mtype=template&img={{value.img}}" >
+                                            <img src="/data/网站模板/{{value.img}}.jpg" original="/data/网站模板/{{value.img}}.jpg" alt="{{value.title}}" class="lazy" style="display:inline;">
+                                            {{value.title}}
+                                        </a>
+                                    </li>
+                                {{/if}}
+                            {{/each}}
+                        </ul>
+                        <ul class="ul_words">
+                            {{each template as value index}}
+                                {{if value.img > 6 && value.img < 16}}
+                                    <li>
+                                        <a target="_blank" href="/detail?mtype=template&img={{value.img}}">
+                                            {{value.title}}
+                                        </a>
+                                    </li>
+                                {{/if}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="index_recommend">
+                <div class="head clearfix">
+                    <a class="more" href="/js" target="_blank">更多&nbsp;<span class="more-sign">></span></a>
+                    <ul class="clearfix index-coupon-menus">
+                        <li class="current index-coupon-menus-first">
+                            网页特效
+                            <span class="arrow-up-menu arrow"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content clearfix">
+                    <div class="per current">
+                        <ul class="ul_pics">
+                            {{each js as value index}}
+                                {{if value.img < 7}}
+                                    <li>
+                                        <a target="_blank" href="/detail?mtype=js&img={{value.img}}">
+                                            <img src="/data/网页特效/{{value.img}}.jpg" original="/data/网页特效/{{value.img}}.jpg" alt="{{value.title}}" class="lazy" style="display:inline;">
+                                            {{value.title}}
+                                        </a>
+                                    </li>
+                                {{/if}}
+                            {{/each}}
+                        </ul>
+                        <ul class="ul_words">
+                            {{each js as value index}}
+                                {{if value.img >6 && value.img <16 }}
+                                    <li>
+                                        <a target="_blank" href="/detail?mtype=js&img={{value.img}}">
+                                            {{value.title}}
+                                        </a>
+                                    </li>
+                                {{/if}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="index_recommend">
+                <div class="head clearfix">
+                    <a class="more" href="/php" target="_blank">更多&nbsp;<span class="more-sign">></span></a>
+                    <ul class="clearfix index-coupon-menus">
+                        <li class="current index-coupon-menus-first">
+                            PHP源码
+                            <span class="arrow-up-menu arrow"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content clearfix">
+                    <div class="per current">
+                        <ul class="ul_pics">
+                            {{each php as value index}}
+                                {{if value.img < 7}}
+                                    <li>
+                                        <a target="_blank" href="/detail?mtype=php&img={{value.img}}">
+                                            <img src="/data/PHP/{{value.img}}.jpg" original="/data/PHP/{{value.img}}.jpg" alt="{{value.title}}" class="lazy" style="display: inline;">
+                                            {{value.title}}
+                                        </a>
+                                    </li>
+                                {{/if}}
+                            {{/each}}
+                        </ul>
+                        <ul class="ul_words">
+                            {{each php as value index}}
+                                {{if value.img >6 && value.img <16 }}
+                                    <li>
+                                        <a target="_blank" href="/detail?mtype=php&img={{value.img}}">
+                                            {{value.title}}
+                                        </a>
+                                    </li>
+                                {{/if}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index_right">
+            
+            <div class="sidebar_per sidebar_first">
+                <div class="item">
+                    <div class="title"><strong>视频教程</strong></div>
+                    <div class="lists">
+                        {{each video as value index}}
+                            {{if value.img <= 15}}
+                                <a href="/detail?mtype=video&img={{value.img}}">{{value.title}}</a>
+                            {{/if}}
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title"><strong>酷站欣赏</strong></div>
+                    <div class="lists">
+                        {{each site as value index}}
+                            {{if value.img <= 15}}
+                                <a href="/detail?mtype=site&img={{value.img}}">{{value.title}}</a>
+                            {{/if}}
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title"><strong>整站源码</strong></div>
+                    <div class="lists" style="border-bottom:none">
+                        {{each source as value index}}
+                            {{if value.img <= 15}}
+                                <a href="/detail?mtype=source&img={{value.img}}">{{value.title}}</a>
+                            {{/if}}
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    {{include './comms/main-footer'}}
+</body>
+
+</html>

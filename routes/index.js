@@ -74,52 +74,19 @@ router.get('/order', function (req, res, next) {
 
 })
 
-router.get('/临时关闭', function (req, res, next) {
-  const getPromises =
-    ['网站模板', '网页特效', 'PHP', '视频教程', '酷站欣赏', '整站源码'].map(par => detail.get(par));
-
-  Promise.all(getPromises)
-    .then(([template, js, php, video, site, source]) =>
-      res.render('index.html', { template, js, php, video, site, source, current: 'index', account: res.cookie['account'], email: res.cookie['email'] })
+router.get('/', function (req, res, next) {
+  // const getPromises =
+  //   ['网站模板', '网页特效', 'PHP', '视频教程', '酷站欣赏', '整站源码'].map(par => detail.get(par));
+const getPromises =
+    ['商务PPT', '节日PPT', '教育PPT'].map(par => detail.get(par));
+  // Promise.all(getPromises)
+  //   .then(([template, js, php, video, site, source]) =>
+  //     res.render('index.html', { template, js, php, video, site, source, current: 'index', account: res.cookie['account'], email: res.cookie['email'] })
+  //   )
+Promise.all(getPromises)
+    .then(([shangwu,jieri,jiaoyu]) =>
+      res.render('index.html', { shangwu,jieri,jiaoyu, current: 'index', account: res.cookie['account'], email: res.cookie['email'] })
     )
-
-  // detail.get('网站模板')
-  //   .then((result) => {
-  //     let template = result;
-  //     detail.get('网页特效')
-  //       .then((result) => {
-  //         let js = result;
-  //         detail.get('PHP')
-  //           .then((result) => {
-  //             let php = result;
-  //             detail.get('视频教程')
-  //               .then((result) => {
-  //                 let video = result;
-  //                 detail.get('酷站欣赏')
-  //                   .then((result) => {
-  //                     let site = result;
-  //                     detail.get('整站源码')
-  //                       .then((result) => {
-  //                         let source = result;
-  //                         res.render('index.html', {
-  //                           current: 'index',
-  //                           template: template,
-  //                           js: js,
-  //                           php: php,
-  //                           video: video,
-  //                           site: site,
-  //                           source: source
-  //                         });
-  //                       })
-  //                   })
-  //               })
-
-  //           })
-  //       })
-
-  //     // return result;
-  //   })
-
 });
 
 router.get('/search', function (req, res, next) {
@@ -138,11 +105,22 @@ router.get('/search', function (req, res, next) {
 
 })
 
-router.get('/js', function (req, res, next) {
+// router.get('/js', function (req, res, next) {
+//   type.getTypeFrom('01')
+//     .then((result) => {
+//       let type = result;
+//       detail.get('网页特效', req.query.type)
+//         .then((result) => {
+//           res.render('js.html', { rule: req.query.type == undefined ? '' : req.query.type, route: 'js', type: type, current: 'js', js: result, account: res.cookie['account'], email: res.cookie['email'] });
+//         })
+
+//     })
+// });
+router.get('/shangwu', function (req, res, next) {
   type.getTypeFrom('01')
     .then((result) => {
       let type = result;
-      detail.get('网页特效', req.query.type)
+      detail.get('商务PPT', req.query.type)
         .then((result) => {
           res.render('js.html', { rule: req.query.type == undefined ? '' : req.query.type, route: 'js', type: type, current: 'js', js: result, account: res.cookie['account'], email: res.cookie['email'] });
         })
@@ -150,71 +128,96 @@ router.get('/js', function (req, res, next) {
     })
 });
 
-router.get('/php', function (req, res, next) {
-
+router.get('/jieri', function (req, res, next) {
   type.getTypeFrom('02')
-    .then((result) => {
-      let type = result;
-
-      detail.get('PHP', req.query.type)
+    .then((ret) => {
+      let type = ret;
+      detail.get('节日PPT', req.query.type)
         .then((result) => {
-          res.render('php.html', { rule:req.query.type == undefined?'':req.query.type,route: 'php', type: type, current: 'php', php: result, account: res.cookie['account'], email: res.cookie['email'] });
+          console.log(result);
+          res.render('php.html', { rule: req.query.type == undefined ? '' : req.query.type, route: 'jieri', type: type, current: 'jieri', js: result, account: res.cookie['account'], email: res.cookie['email'] });
         })
 
     })
 });
 
-router.get('/templates', function (req, res, next) {
+router.get('/jiaoyu', function (req, res, next) {
   type.getTypeFrom('03')
     .then((result) => {
       let type = result;
-      detail.get('网站模板', req.query.type)
+      detail.get('教育PPT', req.query.type)
         .then((result) => {
-          res.render('templates.html', { rule:req.query.type == undefined?'':req.query.type,route: 'templates', type: type, current: 'templates', template: result, account: res.cookie['account'], email: res.cookie['email'] });
+          res.render('templates.html', { rule: req.query.type == undefined ? '' : req.query.type, route: 'jiaoyu', type: type, current: 'jiaoyu', js: result, account: res.cookie['account'], email: res.cookie['email'] });
         })
 
     })
 });
 
-router.get('/video', function (req, res, next) {
-  type.getTypeFrom('04')
-    .then((result) => {
-      let type = result;
-      detail.get('视频教程', req.query.type)
-        .then((result) => {
-          res.render('video.html', { rule:req.query.type == undefined?'':req.query.type,route: 'video', type: type, current: 'video', video: result, account: res.cookie['account'], email: res.cookie['email'] });
-        })
+// router.get('/php', function (req, res, next) {
 
-    })
-});
+//   type.getTypeFrom('02')
+//     .then((result) => {
+//       let type = result;
 
-router.get('/site', function (req, res, next) {
-  type.getTypeFrom('05')
-    .then((result) => {
-      let type = result;
-      detail.get('酷站欣赏', req.query.type)
-        .then((result) => {
-          res.render('site.html', { rule:req.query.type == undefined?'':req.query.type,video: 'site', type: type, current: 'site', site: result, account: res.cookie['account'], email: res.cookie['email'] });
-        })
+//       detail.get('PHP', req.query.type)
+//         .then((result) => {
+//           res.render('php.html', { rule:req.query.type == undefined?'':req.query.type,route: 'php', type: type, current: 'php', php: result, account: res.cookie['account'], email: res.cookie['email'] });
+//         })
 
-    })
-});
+//     })
+// });
 
-router.get('/source', function (req, res, next) {
-  type.getTypeFrom('06')
-    .then((result) => {
-      let type = result;
-      detail.get('整站源码', req.query.type)
-        .then((result) => {
-          res.render('source.html', { rule:req.query.type == undefined?'':req.query.type,route: 'source', type: type, current: 'source', source: result, account: res.cookie['account'], email: res.cookie['email'] });
-        })
+// router.get('/templates', function (req, res, next) {
+//   type.getTypeFrom('03')
+//     .then((result) => {
+//       let type = result;
+//       detail.get('网站模板', req.query.type)
+//         .then((result) => {
+//           res.render('templates.html', { rule:req.query.type == undefined?'':req.query.type,route: 'templates', type: type, current: 'templates', template: result, account: res.cookie['account'], email: res.cookie['email'] });
+//         })
 
-    })
-});
+//     })
+// });
 
-router.get('/contact', function (req, res, next) {
-  res.render('contact.html', { value: 1, account: res.cookie['account'], email: res.cookie['email'] });
-});
+// router.get('/video', function (req, res, next) {
+//   type.getTypeFrom('04')
+//     .then((result) => {
+//       let type = result;
+//       detail.get('视频教程', req.query.type)
+//         .then((result) => {
+//           res.render('video.html', { rule:req.query.type == undefined?'':req.query.type,route: 'video', type: type, current: 'video', video: result, account: res.cookie['account'], email: res.cookie['email'] });
+//         })
+
+//     })
+// });
+
+// router.get('/site', function (req, res, next) {
+//   type.getTypeFrom('05')
+//     .then((result) => {
+//       let type = result;
+//       detail.get('酷站欣赏', req.query.type)
+//         .then((result) => {
+//           res.render('site.html', { rule:req.query.type == undefined?'':req.query.type,video: 'site', type: type, current: 'site', site: result, account: res.cookie['account'], email: res.cookie['email'] });
+//         })
+
+//     })
+// });
+
+// router.get('/source', function (req, res, next) {
+//   type.getTypeFrom('06')
+//     .then((result) => {
+//       let type = result;
+//       detail.get('整站源码', req.query.type)
+//         .then((result) => {
+//           res.render('source.html', { rule:req.query.type == undefined?'':req.query.type,route: 'source', type: type, current: 'source', source: result, account: res.cookie['account'], email: res.cookie['email'] });
+//         })
+
+//     })
+// });
+
+// router.get('/contact', function (req, res, next) {
+//   res.render('contact.html', { value: 1, account: res.cookie['account'], email: res.cookie['email'] });
+// });
 
 router.get('/login', function (req, res, next) {
   res.render('login.html', { value: 1 });

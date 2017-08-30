@@ -63,24 +63,33 @@ Detail.getAll = (title) => new Promise((resolve,reject)=>{
 })
 
 Detail.getFrom = (mtype, img) => new Promise((resolve, reject) => {
-    if (mtype == 'js') {
-        mtype = '网页特效'
+    if (mtype == 'shangwu') {
+        mtype = '商务PPT'
     }
-    if (mtype == 'php') {
-        mtype = 'PHP'
+    if (mtype == 'jieri') {
+        mtype = '节日PPT'
     }
-    if (mtype == 'site') {
-        mtype = '酷站欣赏'
+    if (mtype == 'jiaoyu') {
+        mtype = '教育PPT'
     }
-    if (mtype == 'video') {
-        mtype = '视频教程'
-    }
-    if (mtype == 'template') {
-        mtype = '网站模板'
-    }
-    if (mtype == 'source') {
-        mtype = '整站源码'
-    }
+    // if (mtype == 'js') {
+    //     mtype = '网页特效'
+    // }
+    // if (mtype == 'php') {
+    //     mtype = 'PHP'
+    // }
+    // if (mtype == 'site') {
+    //     mtype = '酷站欣赏'
+    // }
+    // if (mtype == 'video') {
+    //     mtype = '视频教程'
+    // }
+    // if (mtype == 'template') {
+    //     mtype = '网站模板'
+    // }
+    // if (mtype == 'source') {
+    //     mtype = '整站源码'
+    // }
     var sql = `select mtype, down, look, img, title, text, je from muban where mtype = '${mtype}' and img = ${img} `;
     db.query(sql)
         .then((results) => {

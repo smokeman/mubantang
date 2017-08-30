@@ -1,9 +1,10 @@
 {{include './comms/title_header_4'}}
 
 <body>
-    {{include './comms/all_header'}} {{include './comms/paoma'}}
+    {{include './comms/all_header'}}
+     {{include './comms/paoma'}}
 
-    <div id="classify" class="tg_classify w_list">
+    <!--<div id="classify" class="tg_classify w_list">
         <div class="tg_tab_box on">
             <div class="tg_classify_wrap clearfix">
                 <dl class="tg_classify_all tg_classify_flat dl_left">
@@ -44,7 +45,7 @@
                 </dl>
             </div>
         </div>
-    </div>
+    </div>-->
     <div id="container" class="w_list">
 
         {{include './comms/sort'}}
@@ -52,11 +53,11 @@
             <div class="list_main clearfix">
                 {{each js as value index}}
                 <div class="per">
-                    <a target="_blank" href="/detail?mtype=js&img={{value.img}}" class="img_link" style="height:217px"> 
-                            <img src="/data/网页特效/{{value.img}}.jpg"  style="height:217px" original="/data/网页特效/{{value.img}}.jpg" alt="{{value.title}}" class="lazy"  />
+                    <a target="_blank" href="/detail?mtype=shangwu&img={{value.img}}" class="img_link" style="height:217px"> 
+                            <img src="/data/商务PPT/{{value.img}}1.jpg"  style="height:217px" original="/data/商务PPT/{{value.img}}1.jpg" alt="{{value.title}}" class="lazy"  />
                         </a>
                     <div class="foot">
-                        <p class="title"><a target="_blank" href="/detail?mtype=js&img={{value.img}}">{{value.title}}</a> </p>
+                        <p class="title"><a target="_blank" href="/detail?mtype=shangwu&img={{value.img}}1">{{value.title}}</a> </p>
                         <div class="statics">
                             <a class='download citecommon'>下载 <em>{{value.down}}次</em></a>
 
@@ -69,9 +70,9 @@
             </div>
 
         </div>
-        <div class="pager">共<span class="red"> {{js.length}} </span>个jquery特效 <a class="prev" href="/js">上一页</a>
-            <a class="num" href="/js">1</a>
-            <a class="next" href="/js">下一页</a>
+        <div class="pager">共<span class="red"> {{js.length}} </span>个jquery特效 <a class="prev" href="/shangwu">上一页</a>
+            <a class="num" href="/shangwu">1</a>
+            <a class="next" href="/shangwu">下一页</a>
         </div>
     </div>
     {{include './comms/main-footer'}}
